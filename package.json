@@ -40,8 +40,6 @@
 	},
 	"lint-staged": {
 		"*.svelte": "pnpm check",
-		"*": [
-			"pnpm format"
-		]
+		"*": "pnpm format"
 	}
 }
