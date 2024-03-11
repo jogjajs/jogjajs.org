@@ -1,0 +1,8 @@
+<header class="w-full flex justify-between max-w-screen-lg mx-auto px-4 py-4 md:px-0">
+	<a href="/">Logo</a>
+
+	<nav class="space-x-8">
+		<a href="/">Home</a>
+		<a href="/">Events</a>
+	</nav>
+</header>
