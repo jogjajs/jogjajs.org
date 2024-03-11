@@ -1,5 +1,12 @@
 <div class="p-4 w-full bg-gray-100 h-screen flex flex-col justify-center">
-	<section class="flex flex-col justify-center items-center text-center max-w-2xl mx-auto">
+	<section class="relative flex flex-col justify-center items-center text-center max-w-2xl mx-auto">
+		<div
+			class="absolute -top-14 bg-red-50 border border-red-300 py-1.5 px-2 inline-flex items-center rounded-2xl text-sm space-x-2"
+		>
+			<span class="animate-pulse border border-red-800 bg-red-600 w-2.5 h-2.5 rounded-full"></span>
+			<span> Upcoming talks on 7 March </span>
+		</div>
+
 		<h1 class="text-3xl md:text-5xl font-bold leading-tight">
 			JavaScript User Group based in Yogyakarta, Indonesia
 		</h1>
