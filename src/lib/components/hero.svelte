@@ -1,10 +1,10 @@
-<div class="p-4 w-full bg-gray-100 h-[700px] flex flex-col justify-center">
-	<div class="flex flex-col justify-center items-center text-center max-w-2xl mx-auto space-y-4">
-		<h1 class="text-5xl font-bold leading-tight">
+<div class="p-4 w-full bg-gray-100 h-screen flex flex-col justify-center">
+	<section class="flex flex-col justify-center items-center text-center max-w-2xl mx-auto">
+		<h1 class="text-3xl md:text-5xl font-bold leading-tight">
 			JavaScript User Group based in Yogyakarta, Indonesia
 		</h1>
 
-		<p class="max-w-md mx-auto text-gray-600">
+		<p class="max-w-md mx-auto text-gray-600 mt-6 mb-8">
 			Come and meet other developers & industry leaders interested in JavaScript and its ecosystem
 			in Yogyakarta.
 		</p>
@@ -14,5 +14,5 @@
 		>
 			Let's join & collaborate
 		</button>
-	</div>
+	</section>
 </div>

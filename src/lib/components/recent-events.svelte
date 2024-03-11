@@ -7,11 +7,11 @@
 >
 	<h2 class="text-3xl font-semibold">Recent Events</h2>
 
-	<div class="grid grid-cols-1 mt-8 md:mt-0 md:grid-cols-2 gap-8 md:gap-16 anchor-2">
+	<section class="grid grid-cols-1 mt-8 md:mt-0 md:grid-cols-2 gap-8 md:gap-16 anchor-2">
 		{#each [1, 2, 3] as key (key)}
 			<EventCard />
 		{/each}
-	</div>
+	</section>
 </div>
 
 <style>
