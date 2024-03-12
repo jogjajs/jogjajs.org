@@ -16,7 +16,7 @@
 		{#each [1, 2, 3] as key (key)}
 			<EventCard />
 		{/each}
-		<a href="/" class="relative px-6 py-3 font-bold text-black group col-span-2 w-fit">
+		<a href="/" class="relative px-6 py-3 font-bold text-black group md:col-span-2 w-fit">
 			<span
 				class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"
 			></span>
