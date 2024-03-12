@@ -1,11 +1,10 @@
 <script>
-	import logo from '$lib/assets/logo.svg';
+	import logo from '$lib/assets/logo-putih.svg';
 </script>
 
-<footer
-	class="w-full py-12 px-4 md:px-0 bg-gray-100 mt-20 opacity-70 hover:opacity-100 duration-300 transition-opacity"
->
-	<div class="max-w-screen-lg mx-auto">
+<footer class="relative w-full bg-red-600 text-white mt-40">
+	<span aria-hidden="true" class="onthel-bg"></span>
+	<div class="max-w-screen-lg mx-auto py-12 px-4 md:px-0">
 		<div class="grid grid-cols-2 md:grid-cols-3 w-full gap-8">
 			<div class="md:justify-self-start flex flex-col gap-2">
 				<b class="mb-2">Explore</b>
@@ -31,7 +30,14 @@
 			class="flex flex-col md:flex-row justify-between items-center md:items-end mt-20 gap-4 md:gap-0"
 		>
 			<div class="flex items-center md:items-start flex-col gap-2">
-				<img src={logo} alt="JogjaJS logo" width="100" height="100" />
+				<img
+					src={logo}
+					alt="JogjaJS logo"
+					width="100"
+					height="100"
+					decoding="async"
+					loading="lazy"
+				/>
 				<p>
 					Made with <a href="https://kit.svelte.dev" class="underline hover:no-underline"
 						>SvelteKit</a
@@ -44,3 +50,17 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	.onthel-bg {
+		height: 30px;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: -30px;
+		background-image: url('../assets/jogjajs-footer.webp');
+		background-repeat: repeat-x;
+		background-size: contain;
+		background-position-y: 5px;
+	}
+</style>
