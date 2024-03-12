@@ -1,4 +1,5 @@
 <script>
+	import CollaborateBanner from '$lib/components/collaborate-banner.svelte';
 	import GroupPhotos from '$lib/components/group-photos.svelte';
 	import Hero from '$lib/components/hero.svelte';
 	import PageFooter from '$lib/components/page-footer.svelte';
@@ -12,4 +13,5 @@
 <GroupPhotos />
 <RecentEvents />
 <Partners />
+<CollaborateBanner />
 <PageFooter />
