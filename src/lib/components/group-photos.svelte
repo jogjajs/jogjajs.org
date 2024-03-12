@@ -11,7 +11,9 @@
 	</p>
 </div>
 
-<Marqueeck options={{ direction: 'left' }}>
-	<img src={group1} alt="Haha" width="300" height="300" />
-	<img src={group2} alt="Haha" width="300" height="300" />
-</Marqueeck>
+<div class="overflow-hidden">
+	<Marqueeck options={{ direction: 'left' }}>
+		<img src={group1} alt="Haha" width="300" height="300" />
+		<img src={group2} alt="Haha" width="300" height="300" />
+	</Marqueeck>
+</div>

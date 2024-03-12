@@ -12,15 +12,22 @@
 		</p>
 	</div>
 
-	<section class="grid grid-cols-1 mt-8 md:mt-0 md:grid-cols-2 gap-8 md:gap-16 anchor-2">
+	<section class="grid grid-cols-1 mt-8 md:mt-0 md:grid-cols-2 gap-8 md:gap-16 anchor">
 		{#each [1, 2, 3] as key (key)}
 			<EventCard />
 		{/each}
+		<a href="/" class="relative px-6 py-3 font-bold text-black group col-span-2 w-fit">
+			<span
+				class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"
+			></span>
+			<span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+			<span class="relative">More events</span>
+		</a>
 	</section>
 </div>
 
 <style>
-	.anchor-2 {
+	.anchor {
 		grid-column: 2 / 4;
 	}
 </style>

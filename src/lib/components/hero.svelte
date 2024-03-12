@@ -16,10 +16,12 @@
 			in Yogyakarta.
 		</p>
 
-		<button
-			class="flex cursor-pointer items-center rounded-md border-2 border-black bg-[#C4A1FF] px-10 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
-		>
-			Let's join & collaborate
-		</button>
+		<a href="/" class="relative px-6 py-3 font-bold text-black group">
+			<span
+				class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"
+			></span>
+			<span class="absolute inset-0 w-full h-full border-4 border-black"></span>
+			<span class="relative"> Let's join & collaborate </span>
+		</a>
 	</section>
 </div>
