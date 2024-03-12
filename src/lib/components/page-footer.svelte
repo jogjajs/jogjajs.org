@@ -9,20 +9,21 @@
 		<div class="grid grid-cols-2 md:grid-cols-3 w-full gap-8">
 			<div class="md:justify-self-start flex flex-col gap-2">
 				<b class="mb-2">Explore</b>
-				<a href="https://github.com">Home</a>
-				<a href="https://github.com">Events</a>
-				<a href="https://github.com">About us</a>
-				<a href="https://github.com">Code of Conduct</a>
+				<a href="/" class="hover:underline">Home</a>
+				<a href="/events" class="hover:underline">Events</a>
+				<a href="/about" class="hover:underline">About us</a>
+				<a href="/code-of-conduct" class="hover:underline">Code of Conduct</a>
 			</div>
 			<div class="md:justify-self-center flex flex-col gap-2">
 				<b class="mb-2">Socials</b>
-				<a href="https://github.com">Instagram</a>
-				<a href="https://github.com">Github</a>
-				<a href="https://github.com">Youtube</a>
+				<a href="https://github.com" class="hover:underline">Instagram</a>
+				<a href="https://github.com" class="hover:underline">Telegram</a>
+				<a href="https://github.com" class="hover:underline">Github</a>
+				<a href="https://github.com" class="hover:underline">Youtube</a>
 			</div>
 			<div class="md:justify-self-end flex flex-col gap-2">
 				<b class="mb-2">More</b>
-				<a href="https://github.com">Github</a>
+				<a href="https://github.com" class="hover:underline">Github</a>
 			</div>
 		</div>
 
