@@ -1,0 +1,48 @@
+<script>
+	import { browser } from '$app/environment';
+	import { Themes } from '$lib/data/constants';
+	import { theme } from '$lib/data/store';
+	import { onMount, tick } from 'svelte';
+
+	/** @type {boolean} */
+	let isDarkMode;
+	$: isDarkMode = $theme === Themes.Dark;
+
+	/** @type {string} */
+	let enableOrDisable;
+	$: enableOrDisable = isDarkMode ? 'Disable' : 'Enable';
+
+	// There's also some code in app.html to help avoid unwanted flashes of dark/light
+	const toggleDarkMode = async () => {
+		theme.set(isDarkMode ? Themes.Light : Themes.Dark);
+
+		if (browser) {
+			window.localStorage.setItem('theme', JSON.stringify($theme));
+
+			// Not exactly sure why this is needed but without it, the first click fails.
+			await tick();
+
+			if (isDarkMode) {
+				document.documentElement.classList.add('dark');
+				document.documentElement.classList.remove('light');
+			} else {
+				document.documentElement.classList.remove('dark');
+				document.documentElement.classList.add('light');
+			}
+		}
+	};
+
+	onMount(() => {
+		// This same logic is in app.html also, but I didn't want to import it there, so it's just duplicated in both places.
+		if (
+			('theme' in localStorage && JSON.parse(localStorage.theme) === Themes.Dark) ||
+			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		) {
+			theme.set(Themes.Dark);
+		}
+	});
+</script>
+
+<button title="{enableOrDisable} dark mode" on:click={toggleDarkMode}
+	>{isDarkMode ? 'Light' : 'Dark'}</button
+>

@@ -1,17 +1,25 @@
-<div class="p-4 w-full bg-gray-100 h-screen flex flex-col justify-center">
-	<section class="relative flex flex-col justify-center items-center text-center max-w-2xl mx-auto">
+<script>
+	import GridBackground from './grid-background.svelte';
+</script>
+
+<GridBackground>
+	<section
+		class="relative flex flex-col bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent justify-center items-center text-center max-w-2xl mx-auto"
+	>
 		<div
-			class="absolute -top-14 bg-red-50 border border-red-300 py-1.5 px-2 inline-flex items-center rounded-2xl text-sm space-x-2"
+			class="absolute -top-14 text-black bg-red-50 dark:bg-red-200 border border-red-300 dark:border-red-500 py-1.5 px-2 inline-flex items-center rounded-2xl text-sm space-x-2"
 		>
-			<span class="animate-pulse border border-red-800 bg-red-600 w-2.5 h-2.5 rounded-full"></span>
+			<span
+				class="animate-pulse border border-red-800 bg-red-600 dark:bg-red-800 w-2.5 h-2.5 rounded-full"
+			></span>
 			<span> Upcoming talks on 7 March </span>
 		</div>
 
-		<h1 class="text-3xl md:text-5xl font-bold leading-tight">
+		<h1 class="text-3xl md:text-5xl font-bold leading-tight text-gray-600 dark:text-transparent">
 			JavaScript User Group based in Yogyakarta, Indonesia
 		</h1>
 
-		<p class="max-w-md mx-auto text-gray-600 mt-6 mb-8">
+		<p class="max-w-md mx-auto mt-6 mb-8 text-gray-600 dark:text-transparent">
 			Come and meet other developers & industry leaders interested in JavaScript and its ecosystem
 			in Yogyakarta.
 		</p>
@@ -24,4 +32,4 @@
 			<span class="relative"> Let's join & collaborate </span>
 		</a>
 	</section>
-</div>
+</GridBackground>
