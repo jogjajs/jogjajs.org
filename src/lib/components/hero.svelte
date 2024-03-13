@@ -24,12 +24,14 @@
 			in Yogyakarta.
 		</p>
 
-		<a href="/" class="relative px-6 py-3 font-bold text-black group">
+		<a href="/" class="relative px-6 py-3 font-bold text-white rounded-lg group">
 			<span
-				class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"
+				class="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-1 -translate-y-1 bg-purple-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"
 			></span>
-			<span class="absolute inset-0 w-full h-full border-4 border-black"></span>
-			<span class="relative"> Let's join & collaborate </span>
+			<span
+				class="absolute inset-0 w-full h-full transition duration-300 transform translate-x-1 translate-y-1 bg-pink-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-difference dark:mix-blend-screen"
+			></span>
+			<span class="relative">Let's join & collaborate</span>
 		</a>
 	</section>
 </GridBackground>
