@@ -1,8 +1,12 @@
 <script>
+	import { onMount, tick } from 'svelte';
+	import AkarIconsSun from '~icons/akar-icons/sun';
+	import AkarIconsMoon from '~icons/akar-icons/moon';
 	import { browser } from '$app/environment';
 	import { Themes } from '$lib/data/constants';
 	import { theme } from '$lib/data/store';
-	import { onMount, tick } from 'svelte';
+	import { quintOut } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
 
 	/** @type {boolean} */
 	let isDarkMode;
@@ -43,6 +47,18 @@
 	});
 </script>
 
-<button title="{enableOrDisable} dark mode" on:click={toggleDarkMode}
-	>{isDarkMode ? 'Light' : 'Dark'}</button
+<button
+	title="{enableOrDisable} dark mode"
+	class="inline-flex items-center align-middle hover:text-blue-600 hover:dark:text-yellow-600 rounded-full p-1"
+	on:click={toggleDarkMode}
 >
+	{#if isDarkMode}
+		<span in:fly={{ duration: 300, y: -500, opacity: 0.5, easing: quintOut }}>
+			<AkarIconsSun />
+		</span>
+	{:else}
+		<span in:fly={{ duration: 300, y: 500, opacity: 0.5, easing: quintOut }}>
+			<AkarIconsMoon />
+		</span>
+	{/if}
+</button>
