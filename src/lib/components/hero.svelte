@@ -15,7 +15,9 @@
 			<span> Upcoming talks on 7 March </span>
 		</div>
 
-		<h1 class="text-3xl md:text-5xl font-bold leading-tight text-gray-600 dark:text-transparent">
+		<h1
+			class="text-3xl md:text-5xl font-bold leading-tight text-gray-600 text-balance dark:text-transparent"
+		>
 			JavaScript User Group based in Yogyakarta, Indonesia
 		</h1>
 
