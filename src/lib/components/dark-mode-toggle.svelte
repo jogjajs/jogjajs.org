@@ -47,7 +47,7 @@
 
 <button
 	title="{enableOrDisable} dark mode"
-	class="inline-flex items-center align-middle hover:text-blue-600 hover:dark:text-yellow-600 rounded-full p-1"
+	class="inline-flex items-center align-middle hover:text-blue-600 hover:dark:text-yellow-600 outline-none focus:ring transition rounded-full p-1"
 	on:click={toggleDarkMode}
 >
 	{#if isDarkMode}

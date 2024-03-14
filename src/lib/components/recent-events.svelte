@@ -7,7 +7,7 @@
 >
 	<div class="md:max-w-[70%]">
 		<h2 class="text-3xl font-semibold leading-relaxed">Recent Events</h2>
-		<p class="text-gray-500">
+		<p class="text-gray-500 dark:text-gray-400">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, temporibus.
 		</p>
 	</div>

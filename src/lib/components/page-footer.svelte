@@ -2,7 +2,7 @@
 	import logo from '$lib/assets/logo-putih.svg';
 </script>
 
-<footer class="relative w-full bg-red-600 text-white mt-40">
+<footer class="relative w-full bg-red-600 dark:bg-red-700 text-white mt-40">
 	<span aria-hidden="true" class="onthel-bg"></span>
 	<div class="max-w-screen-lg mx-auto py-12 px-4 md:px-0">
 		<div class="grid grid-cols-2 md:grid-cols-3 w-full gap-8">
@@ -22,7 +22,11 @@
 			</div>
 			<div class="md:justify-self-end flex flex-col gap-2">
 				<b class="mb-2">More</b>
-				<a href="https://github.com" class="hover:underline">Github</a>
+				<p>
+					Business inquiries at <a href="https://github.com" class="hover:underline"
+						>jogjajs.organizer@gmail.com</a
+					>
+				</p>
 			</div>
 		</div>
 
@@ -39,11 +43,11 @@
 					loading="lazy"
 				/>
 				<p>
-					Made with <a href="https://kit.svelte.dev" class="underline hover:no-underline"
+					Made with <a href="https://kit.svelte.dev" class="font-semibold hover:underline"
 						>SvelteKit</a
 					>
 					and
-					<a href="https://tailwindcss.com" class="underline hover:no-underline">Tailwind CSS</a>.
+					<a href="https://tailwindcss.com" class="font-semibold hover:underline">Tailwind CSS</a>.
 				</p>
 			</div>
 			<p>© 2014-present JogjaJS. All rights reserved.</p>
@@ -58,7 +62,7 @@
 		display: block;
 		position: absolute;
 		top: -30px;
-		background-image: url('../assets/jogjajs-footer.webp');
+		background-image: url('../assets/jogjajs-footer.png');
 		background-repeat: repeat-x;
 		background-size: contain;
 		background-position-y: 5px;

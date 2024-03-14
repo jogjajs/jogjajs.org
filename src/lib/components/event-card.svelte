@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex flex-col gap-4 overflow-hidden rounded border transition duration-300 border-transparent hover:bg-gray-100 hover:border-gray-200 hover:shadow"
+	class="flex flex-col gap-4 overflow-hidden rounded border transition duration-300 border-transparent hover:bg-gray-100 hover:dark:bg-gray-950 hover:dark:border-gray-800 hover:border-gray-200 hover:shadow"
 >
 	<img src={sample} alt="Ini contoh" width="300" height="300" class="w-full h-[380px] rounded-b" />
 
@@ -20,7 +20,8 @@
 
 			<a
 				href="https://example.com"
-				class="block mt-4 text-blue-600 hover:text-blue-500 hover:underline">Get RSVP</a
+				class="block mt-4 text-blue-600 dark:text-blue-500 hover:text-blue-500 hover:underline"
+				>Get RSVP</a
 			>
 		</div>
 	</div>
