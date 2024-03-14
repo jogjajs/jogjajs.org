@@ -30,20 +30,16 @@
 <div
 	class="flex flex-col gap-4 rounded border transition duration-300 border-transparent hover:bg-gray-100 hover:dark:bg-gray-950 hover:dark:border-gray-800 hover:border-gray-200 hover:shadow"
 >
-	<img src={sample} alt="Ini contoh" width="300" height="300" class="w-full h-[380px] rounded-b" />
+	<img src={sample} alt="Ini contoh" width="400" height="400" class="w-full h-[420px]" />
 
 	<div class="flex flex-col gap-4 pb-4 px-2">
-		<h3 class="text-xl font-bold">JOGJAJS #29 - ReactJS with Codux and PWA</h3>
+		<h3 class="text-xl font-bold text-balance">JOGJAJS #29 - ReactJS with Codux and PWA</h3>
 		<SpeakerTooltips items={people} />
 		<div>
 			<p>Saturday, 26 August 2023</p>
 			<p>at Skyshi Digital Indonesia, PT.</p>
 
 			<div class="flex items-center gap-6 mt-4">
-				<a
-					href="https://example.com"
-					class="text-blue-600 dark:text-blue-500 hover:text-blue-500 hover:underline">Detail</a
-				>
 				<a
 					href="https://example.com"
 					class="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500 hover:text-blue-500 hover:underline"

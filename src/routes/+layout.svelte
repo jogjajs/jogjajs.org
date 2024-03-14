@@ -13,8 +13,8 @@
 	<title>JogjaJS</title>
 </svelte:head>
 
-<div class="dark:bg-black dark:text-white flex flex-col">
-	<PageHeader />
+<PageHeader />
+<main class="min-h-screen dark:bg-black dark:text-white flex flex-col pb-40">
 	<slot />
-	<PageFooter />
-</div>
+</main>
+<PageFooter />

@@ -17,7 +17,7 @@
 			<EventCard />
 		{/each}
 		<a
-			href="/"
+			href="/events"
 			class="relative px-6 py-3 font-bold text-white rounded-lg group md:col-span-2 w-fit"
 		>
 			<span

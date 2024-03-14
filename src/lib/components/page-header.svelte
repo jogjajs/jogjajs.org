@@ -41,7 +41,7 @@
 
 		<nav class="space-x-8">
 			<a class="hover:underline" href="/">Home</a>
-			<a class="hover:underline" href="/">Events</a>
+			<a class="hover:underline" href="/events">Events</a>
 			<DarkModeToggle />
 		</nav>
 	</div>
