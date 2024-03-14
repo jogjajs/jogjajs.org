@@ -1,4 +1,5 @@
 import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
+import defaultTheme from 'tailwindcss/defaultTheme';
 import aspectRatio from '@tailwindcss/aspect-ratio';
 import svgToDataUri from 'mini-svg-data-uri';
 
@@ -41,7 +42,11 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'selector',
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				sans: ['Overpass', ...defaultTheme.fontFamily.sans]
+			}
+		}
 	},
 	plugins: [aspectRatio, addVariablesForColors, addBgGrid]
 };
