@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount, tick } from 'svelte';
 	import AkarIconsSun from '~icons/akar-icons/sun';
 	import AkarIconsMoon from '~icons/akar-icons/moon';
@@ -8,12 +8,10 @@
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
-	/** @type {boolean} */
-	let isDarkMode;
+	let isDarkMode: boolean;
 	$: isDarkMode = $theme === Themes.Dark;
 
-	/** @type {string} */
-	let enableOrDisable;
+	let enableOrDisable: string;
 	$: enableOrDisable = isDarkMode ? 'Disable' : 'Enable';
 
 	// There's also some code in app.html to help avoid unwanted flashes of dark/light
