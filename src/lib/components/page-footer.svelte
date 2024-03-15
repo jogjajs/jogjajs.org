@@ -15,10 +15,10 @@
 			</div>
 			<div class="md:justify-self-center flex flex-col gap-2">
 				<b class="mb-2">Socials</b>
-				<a href="https://github.com" class="hover:underline">Instagram</a>
-				<a href="https://github.com" class="hover:underline">Telegram</a>
-				<a href="https://github.com" class="hover:underline">Github</a>
-				<a href="https://github.com" class="hover:underline">Youtube</a>
+				<a href="https://www.instagram.com/jogjajs" class="hover:underline">Instagram</a>
+				<a href="https://t.me/jogjajs" class="hover:underline">Telegram</a>
+				<a href="https://github.com/jogjajs" class="hover:underline">Github</a>
+				<a href="https://www.youtube.com/@jogjajs" class="hover:underline">Youtube</a>
 			</div>
 			<div class="md:justify-self-end flex flex-col gap-2">
 				<b class="mb-2">More</b>
