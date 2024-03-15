@@ -21,6 +21,7 @@
 		"@iconify-json/akar-icons": "^1.1.23",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-netlify": "^4.1.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
