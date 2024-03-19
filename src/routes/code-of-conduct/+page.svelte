@@ -8,5 +8,7 @@
 		<p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet.</p>
 	</section>
 
-	<p>Pasal 1 ayat 7 perihal makan di kelas.</p>
+	<a class="underline" href="https://github.com/reactjs-id/guidelines/blob/main/CODE_OF_CONDUCT.md"
+		>Example</a
+	>
 </Container>

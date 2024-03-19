@@ -1,12 +1,100 @@
 <script>
+	import AkarIconsXFill from '~icons/akar-icons/x-fill';
 	import Container from '$lib/components/container.svelte';
+	import groupPhoto from '$lib/assets/group-2.jpg';
 </script>
 
 <Container>
 	<section class="text-center mb-16">
-		<h1 class="text-3xl md:text-5xl font-bold mb-2">About Us</h1>
-		<p class="text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet.</p>
+		<h1 class="text-3xl md:text-6xl font-bold mb-2">JOGJAJS</h1>
+		<p class="text-gray-600 dark:text-gray-400">JavaScript user group in Yogyakarta, since 2014</p>
 	</section>
 
-	<p>Halo dunia</p>
+	<div class="relative">
+		<span
+			class="year absolute top-[3px] -left-[115px] font-bold text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			>2018</span
+		>
+		<figure>
+			<img src={groupPhoto} alt="Group hahah" />
+			<figcaption class="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
+				Community folks between 1945 - 1975
+			</figcaption>
+		</figure>
+
+		<h2 class="text-4xl font-bold leading-relaxed mt-8">Start from the ground...</h2>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iusto, aperiam saepe quas
+			dolores quae. Dolorum a molestias facilis molestiae?
+		</p>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iusto, aperiam saepe quas
+			dolores quae. Dolorum a molestias facilis molestiae?
+		</p>
+	</div>
+
+	<figure class="relative mt-16">
+		<span
+			class="year absolute top-[3px] -left-[115px] font-bold text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			>2018</span
+		>
+		<img src={groupPhoto} alt="Group hahah" />
+		<figcaption class="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
+			Community folks between 1945 - 1975
+		</figcaption>
+	</figure>
+	<figure class="mt-8">
+		<div class="grid grid-cols-2 gap-4">
+			<img src={groupPhoto} alt="Group hahah" />
+			<img src={groupPhoto} alt="Group hahah" />
+			<img src={groupPhoto} alt="Group hahah" />
+			<img src={groupPhoto} alt="Group hahah" />
+			<img src={groupPhoto} alt="Group hahah" />
+			<img src={groupPhoto} alt="Group hahah" />
+		</div>
+		<figcaption class="text-center mt-2 text-sm text-gray-600 dark:text-gray-400">
+			Community folks between 1945 - 1975
+		</figcaption>
+	</figure>
+	<h2 class="text-4xl font-bold leading-relaxed mt-8">Host over 100+ events</h2>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ex facere officiis qui illum
+		voluptatem incidunt iste at itaque repellat, blanditiis eius pariatur odio sed natus similique
+		magni, veritatis culpa.
+	</p>
+
+	<section>
+		<h3 class="font-bold text-3xl leading-relaxed mt-8">Meet the organizers</h3>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, vero.</p>
+		<div class="flex flex-wrap justify-center gap-x-8 gap-y-14 mt-8">
+			{#each [1, 2, 4, 5, 3, 55, 67, 11] as idx (idx)}
+				<div class="text-center flex flex-col items-center">
+					<img
+						src="https://api.dicebear.com/8.x/bottts-neutral/svg"
+						width="150"
+						height="150"
+						alt="Avatar"
+						class="mb-3"
+					/>
+					<p>Joe</p>
+					<small class="text-gray-600 dark:text-gray-400">Frontend engineer, XOE</small>
+					<a href="/" title="Twitter" class="rounded-full p-1 mt-2 hover:bg-gray-200 text-xs"
+						><AkarIconsXFill /></a
+					>
+				</div>
+			{/each}
+		</div>
+	</section>
 </Container>
+
+<style lang="postcss">
+	.year {
+		transform: rotate(90deg);
+		text-orientation: upright;
+	}
+
+	img {
+		border-radius: theme(borderRadius.md);
+		box-shadow: theme(boxShadow.lg);
+	}
+</style>
