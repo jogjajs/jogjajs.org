@@ -11,6 +11,7 @@
 		extClass
 	)}
 	{href}
+	{...$$props}
 >
 	<slot />
 </a>

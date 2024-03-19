@@ -2,6 +2,7 @@
 	import AkarIconsLinkOut from '~icons/akar-icons/link-out';
 	import sample from '$lib/assets/event-sample.jpg';
 	import SpeakerTooltips from './speaker-tooltips.svelte';
+	import Link from './link.svelte';
 	const people = [
 		{
 			id: 1,
@@ -40,10 +41,12 @@
 			<p>at Skyshi Digital Indonesia, PT.</p>
 
 			<div class="flex items-center gap-6 mt-4">
-				<a
+				<Link
+					target="_blank"
+					rel="noopener noreferrer"
 					href="https://example.com"
-					class="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500 hover:text-blue-500 hover:underline"
-					>Get RSVP <AkarIconsLinkOut width="15" height="15" /></a
+					extClass="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500"
+					>Get RSVP <AkarIconsLinkOut width="15" height="15" /></Link
 				>
 			</div>
 		</div>

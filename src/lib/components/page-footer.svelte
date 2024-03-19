@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import logo from '$lib/assets/logo-putih.svg';
 </script>
 
@@ -15,6 +15,7 @@
 			</div>
 			<div class="md:justify-self-center flex flex-col gap-2">
 				<b class="mb-2">Socials</b>
+				<a href="https://medium.com/jogjajs-community" class="hover:underline">Medium</a>
 				<a href="https://www.instagram.com/jogjajs" class="hover:underline">Instagram</a>
 				<a href="https://t.me/jogjajs" class="hover:underline">Telegram</a>
 				<a href="https://github.com/jogjajs" class="hover:underline">Github</a>
@@ -23,8 +24,11 @@
 			<div class="md:justify-self-end flex flex-col gap-2">
 				<b class="mb-2">More</b>
 				<p>
-					Business inquiries at <a href="https://github.com" class="hover:underline"
-						>jogjajs.organizer@gmail.com</a
+					Business inquiries at <a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="mailto:jogjajs.organizer@gmail.com"
+						class="hover:underline">jogjajs.organizer@gmail.com</a
 					>
 				</p>
 			</div>
