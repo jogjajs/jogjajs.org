@@ -12,7 +12,7 @@
 
 	<div class="relative">
 		<span
-			class="year absolute top-[3px] -left-[115px] font-bold text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
 			>2018</span
 		>
 		<figure>
@@ -22,12 +22,12 @@
 			</figcaption>
 		</figure>
 
-		<h2 class="text-4xl font-bold leading-relaxed mt-8">Start from the ground...</h2>
-		<p>
+		<h2 class="text-3xl md:text-4xl font-bold leading-relaxed mt-8">Start from the ground...</h2>
+		<p class="text-gray-600 dark:text-gray-400">
 			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iusto, aperiam saepe quas
 			dolores quae. Dolorum a molestias facilis molestiae?
 		</p>
-		<p>
+		<p class="text-gray-600 dark:text-gray-400">
 			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iusto, aperiam saepe quas
 			dolores quae. Dolorum a molestias facilis molestiae?
 		</p>
@@ -35,7 +35,7 @@
 
 	<figure class="relative mt-16">
 		<span
-			class="year absolute top-[3px] -left-[115px] font-bold text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
 			>2018</span
 		>
 		<img src={groupPhoto} alt="Group hahah" />
@@ -56,17 +56,19 @@
 			Community folks between 1945 - 1975
 		</figcaption>
 	</figure>
-	<h2 class="text-4xl font-bold leading-relaxed mt-8">Host over 100+ events</h2>
-	<p>
+	<h2 class="text-3xl md:text-4xl font-bold leading-relaxed mt-8">Host over 100+ events</h2>
+	<p class="text-gray-600 dark:text-gray-400">
 		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ex facere officiis qui illum
 		voluptatem incidunt iste at itaque repellat, blanditiis eius pariatur odio sed natus similique
 		magni, veritatis culpa.
 	</p>
 
 	<section>
-		<h3 class="font-bold text-3xl leading-relaxed mt-8">Meet the organizers</h3>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, vero.</p>
-		<div class="flex flex-wrap justify-center gap-x-8 gap-y-14 mt-8">
+		<h3 class="font-bold text-2xl md:text-3xl leading-relaxed mt-8">Meet the organizers</h3>
+		<p class="text-gray-600 dark:text-gray-400">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, vero.
+		</p>
+		<div class="flex flex-wrap justify-center gap-14 mt-8">
 			{#each [1, 2, 4, 5, 3, 55, 67, 11] as idx (idx)}
 				<div class="text-center flex flex-col items-center">
 					<img
@@ -78,7 +80,10 @@
 					/>
 					<p>Joe</p>
 					<small class="text-gray-600 dark:text-gray-400">Frontend engineer, XOE</small>
-					<a href="/" title="Twitter" class="rounded-full p-1 mt-2 hover:bg-gray-200 text-xs"
+					<a
+						href="/"
+						title="Twitter"
+						class="rounded-full p-1 mt-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-xs"
 						><AkarIconsXFill /></a
 					>
 				</div>
