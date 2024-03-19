@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte';
 	import { blur } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import Link from './link.svelte';
 
 	/** @type {boolean} */
 	let isDarkMode = true;
@@ -40,8 +41,8 @@
 		</a>
 
 		<nav class="space-x-8">
-			<a class="hover:underline" href="/">Home</a>
-			<a class="hover:underline" href="/events">Events</a>
+			<Link href="/">Home</Link>
+			<Link href="/events">Events</Link>
 			<DarkModeToggle />
 		</nav>
 	</div>
