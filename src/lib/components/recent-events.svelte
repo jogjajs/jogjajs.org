@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="block md:grid grid-cols-1 md:grid-cols-3 mt-32 md:mt-64 pb-10 max-w-screen-xl mx-auto px-4 md:px-0"
+	class="block lg:grid grid-cols-1 lg:grid-cols-3 mt-32 lg:mt-64 pb-10 max-w-screen-xl mx-auto px-4 md:px-8 lg:px-0"
 >
 	<div class="md:max-w-[70%]">
 		<h2 class="text-3xl font-semibold leading-relaxed">Recent Events</h2>
@@ -12,7 +12,7 @@
 		</p>
 	</div>
 
-	<section class="grid grid-cols-1 mt-8 md:mt-0 md:grid-cols-2 gap-8 md:gap-16 anchor">
+	<section class="grid grid-cols-1 mt-8 lg:mt-0 md:grid-cols-2 gap-8 lg:gap-16 anchor">
 		{#each [1, 2, 3] as key (key)}
 			<EventCard />
 		{/each}

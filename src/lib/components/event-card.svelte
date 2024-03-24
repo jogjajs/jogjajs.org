@@ -31,7 +31,13 @@
 <div
 	class="flex flex-col gap-4 rounded border transition duration-300 border-transparent hover:bg-gray-100 hover:dark:bg-gray-950 hover:dark:border-gray-800 hover:border-gray-200 hover:shadow"
 >
-	<img src={sample} alt="Ini contoh" width="400" height="400" class="w-full h-[420px] rounded-t" />
+	<img
+		src={sample}
+		alt="Ini contoh"
+		width="400"
+		height="400"
+		class="w-full h-[380px] lg:h-[420px] rounded-t"
+	/>
 
 	<div class="flex flex-col gap-4 pb-4 px-2">
 		<h3 class="text-xl font-bold text-balance">JOGJAJS #29 - ReactJS with Codux and PWA</h3>
