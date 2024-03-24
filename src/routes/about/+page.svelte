@@ -5,9 +5,13 @@
 </script>
 
 <Container>
-	<section class="text-center mb-16">
-		<h1 class="text-3xl md:text-6xl font-bold mb-2">JOGJAJS</h1>
-		<p class="text-gray-600 dark:text-gray-400">JavaScript user group in Yogyakarta, since 2014</p>
+	<section class="mb-28 px-4 md:px-8 lg:px-0">
+		<h1
+			class="text-3xl md:text-6xl font-bold tracking-tight text-transparent
+      bg-clip-text bg-gradient-to-b from-red-600/65 to-red-600/100 dark:from-red-500/40 dark:to-red-500/80"
+		>
+			About JOGJAJS
+		</h1>
 	</section>
 
 	<div class="relative">
