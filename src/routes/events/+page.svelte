@@ -3,12 +3,16 @@
 	import EventCard from '$lib/components/event-card.svelte';
 </script>
 
-<div class="bg-gradient-to-b from-red-500/20 to-red-500/30 w-full">
+<div
+	class="bg-gradient-to-b from-red-500/20 to-red-500/30 dark:from-red-600/20 dark:to-red-600/30 w-full"
+>
 	<div class="header px-4 md:px-8 lg:px-0 py-20 md:py-28">
 		<section class="max-w-screen-lg mx-auto space-y-4">
-			<h1 class="text-4xl md:text-6xl font-bold mb-2 text-red-600">Meetups & Kongkow</h1>
+			<h1 class="text-4xl md:text-6xl font-bold mb-2 text-red-600 dark:text-red-400">
+				Meetups & Kongkow
+			</h1>
 			<p
-				class="text-gray-700 dark:text-gray-400 md:w-3/4 lg:w-1/2 md:text-balance leading-relaxed lg:leading-loose"
+				class="text-gray-700 dark:text-red-100 md:w-3/4 lg:w-1/2 md:text-balance leading-relaxed lg:leading-loose"
 			>
 				We host a variety of events, usually on a monthly basis. These include Meetups for in-depth
 				learning and Kongkow (new in 2024!), our casual hangouts for fun, code discussions, and
