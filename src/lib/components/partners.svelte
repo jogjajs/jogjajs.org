@@ -12,7 +12,7 @@
 		<ul class="flex flex-wrap justify-center gap-8 mt-8">
 			{#each [1, 2, 3] as idx (idx)}
 				<li class="flex flex-col items-center">
-					<img src="https://picsum.photos/180/180" width="180" height="180" alt="org example" />
+					<img src="https://picsum.photos/180/180" width="150" height="150" alt="org example" />
 					<p>Media Indonesia</p>
 				</li>
 			{/each}
@@ -25,7 +25,7 @@
 		<ul class="flex flex-wrap justify-center gap-8 mt-8">
 			{#each [1, 2, 3, 4, 5] as idx (idx)}
 				<li class="flex flex-col items-center">
-					<img src="https://picsum.photos/180/180" width="180" height="180" alt="org example" />
+					<img src="https://picsum.photos/180/180" width="150" height="150" alt="org example" />
 					<p>Org Indonesia</p>
 				</li>
 			{/each}
