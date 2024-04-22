@@ -36,7 +36,7 @@
 		alt="Ini contoh"
 		width="400"
 		height="400"
-		class="w-full h-[380px] lg:h-[420px] rounded-t"
+		class="w-full h-[380px] md:h-[430px] lg:h-[410px] rounded-t"
 	/>
 
 	<div class="flex flex-col gap-4 pb-4 px-2">

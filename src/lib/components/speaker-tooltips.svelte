@@ -26,7 +26,7 @@
 	{#each items as item (item.name)}
 		<div
 			role="tooltip"
-			class="relative -mr-1"
+			class="relative -mr-4"
 			on:mouseenter={() => (hoveredIndex = item.id)}
 			on:mouseleave={() => (hoveredIndex = null)}
 		>
