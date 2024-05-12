@@ -1,38 +1,53 @@
-# create-svelte
+# jogjajs.org
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+JogjaJS homepage.
 
-## Creating a project
+## Demo
 
-If you're seeing this, you've probably already done this step. Congrats!
+[https://jogjajs.org](https://jogjajs.org)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Tech Stack
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- SvelteKit
+- TypeScript
+- Tailwind CSS
 
-## Developing
+## Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To get started running the project locally, please follow the steps below.
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+First, clone the repository.
 
 ```bash
-npm run build
+git clone https://github.com/jogjajs/jogjajs.org.git
 ```
 
-You can preview the production build with `npm run preview`.
+Then, install dependencies and fetch data to your local machine. **Note that we use PNPM.**
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+cd jogjajs.org
+pnpm install
+```
+
+Finally, run the development server.
+
+```bash
+pnpm dev
+```
+
+Open [http://127.0.0.1:5173](http://127.0.0.1:5173) with your browser to see the result.
+
+## Deployment
+
+You can easily deploy to Cloudflare Pages, or you can learn more from https://kit.svelte.dev/docs/adapters.
+
+## Learn More
+
+To learn more about Sveltekit, take a look at the following resources:
+
+- [Svelte Kit Documentation](https://kit.svelte.dev/docs/introduction) - learn about Svelte Kit features and API.
+- [Learn Svelte](https://learn.svelte.dev/tutorial/welcome-to-svelte) - an interactive Svelte tutorial.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
