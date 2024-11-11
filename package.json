@@ -46,7 +46,6 @@
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.5.4",
 		"tailwindcss": "^3.4.14",
-		"tslib": "^2.8.1",
 		"typescript": "^5.6.3",
 		"typescript-eslint": "^8.13.0",
 		"unplugin-icons": "^0.20.1",
