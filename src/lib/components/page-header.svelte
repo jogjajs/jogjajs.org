@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import mainLogo from '$lib/assets/logo.svg';
 	import whiteLogo from '$lib/assets/logo-putih.svg';
 	import { Themes } from '$lib/data/constants';
@@ -9,10 +9,12 @@
 	import { quintOut } from 'svelte/easing';
 	import Link from './link.svelte';
 
-	/** @type {boolean} */
-	let isDarkMode = true;
-	let isLoaded = false;
-	$: isDarkMode = $theme === Themes.Dark;
+	let isDarkMode = $state(true);
+	let isLoaded = $state(false);
+
+	$effect(() => {
+		isDarkMode = $theme === Themes.Dark;
+	});
 
 	onMount(() => {
 		// to help avoid unwanted flashes of dark/light

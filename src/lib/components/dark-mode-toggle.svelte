@@ -8,11 +8,8 @@
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
-	let isDarkMode: boolean;
-	$: isDarkMode = $theme === Themes.Dark;
-
-	let enableOrDisable: string;
-	$: enableOrDisable = isDarkMode ? 'Disable' : 'Enable';
+	let isDarkMode: boolean = $derived($theme === Themes.Dark);
+	let enableOrDisable: string = $derived(isDarkMode ? 'Disable' : 'Enable');
 
 	// There's also some code in app.html to help avoid unwanted flashes of dark/light
 	const toggleDarkMode = async () => {
@@ -48,7 +45,7 @@
 <button
 	title="{enableOrDisable} dark mode"
 	class="inline-flex items-center align-middle hover:text-blue-600 hover:dark:text-yellow-600 outline-none focus:ring transition rounded-full p-1"
-	on:click={toggleDarkMode}
+	onclick={toggleDarkMode}
 >
 	{#if isDarkMode}
 		<span in:fly={{ duration: 300, y: -500, opacity: 0.5, easing: quintOut }}>
