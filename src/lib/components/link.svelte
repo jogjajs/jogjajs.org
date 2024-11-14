@@ -1,8 +1,14 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn';
 
-	export let href: string;
-	export let extClass: string = '';
+	interface Props {
+		href: string;
+		extClass?: string;
+		children?: import('svelte').Snippet;
+		[key: string]: unknown;
+	}
+
+	const { href, extClass, children, ...props }: Props = $props();
 </script>
 
 <a
@@ -11,7 +17,7 @@
 		extClass
 	)}
 	{href}
-	{...$$props}
+	{...props}
 >
-	<slot />
+	{@render children?.()}
 </a>

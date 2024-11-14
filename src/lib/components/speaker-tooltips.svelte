@@ -1,14 +1,18 @@
 <script lang="ts">
 	import { Motion, useTransform, AnimatePresence, useMotionValue, useSpring } from 'svelte-motion';
 
-	export let items: {
-		id: number;
-		name: string;
-		designation: string;
-		image: string;
-	}[];
+	interface Props {
+		items: {
+			id: number;
+			name: string;
+			designation: string;
+			image: string;
+		}[];
+	}
 
-	let hoveredIndex: number | null = null;
+	let { items }: Props = $props();
+
+	let hoveredIndex: number | null = $state(null);
 	const springConfig = { stiffness: 100, damping: 5 };
 	const x = useMotionValue(0); // going to set this value on mouse move
 	// rotate the tooltip
@@ -27,13 +31,12 @@
 		<div
 			role="tooltip"
 			class="relative -mr-4"
-			on:mouseenter={() => (hoveredIndex = item.id)}
-			on:mouseleave={() => (hoveredIndex = null)}
+			onmouseenter={() => (hoveredIndex = item.id)}
+			onmouseleave={() => (hoveredIndex = null)}
 		>
 			<AnimatePresence show={true}>
 				{#if hoveredIndex === item.id}
 					<Motion
-						let:motion
 						initial={{ opacity: 0, y: 20, scale: 0.6 }}
 						animate={{
 							opacity: 1,
@@ -52,26 +55,28 @@
 							whiteSpace: 'nowrap'
 						}}
 					>
-						<div
-							use:motion
-							class="absolute -left-1/2 -top-16 z-50 flex translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
-						>
+						{#snippet children({ motion })}
 							<div
-								class="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent"
-							/>
-							<div
-								class="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent"
-							/>
-							<div class="relative z-30 whitespace-nowrap text-base font-bold text-white">
-								{item.name}
+								use:motion
+								class="absolute -left-1/2 -top-16 z-50 flex translate-x-1/2 flex-col items-center justify-center rounded-md bg-black px-4 py-2 text-xs shadow-xl"
+							>
+								<div
+									class="absolute inset-x-10 -bottom-px z-30 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent"
+								></div>
+								<div
+									class="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent"
+								></div>
+								<div class="relative z-30 whitespace-nowrap text-base font-bold text-white">
+									{item.name}
+								</div>
+								<div class="whitespace-nowrap text-xs text-white">{item.designation}</div>
 							</div>
-							<div class="whitespace-nowrap text-xs text-white">{item.designation}</div>
-						</div>
+						{/snippet}
 					</Motion>
 				{/if}
 			</AnimatePresence>
 			<img
-				on:mousemove={handleMouseMove}
+				onmousemove={handleMouseMove}
 				height={100}
 				width={100}
 				src={item.image}
