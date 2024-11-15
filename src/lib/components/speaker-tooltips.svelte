@@ -1,29 +1,29 @@
 <script lang="ts">
-	import { Motion, useTransform, AnimatePresence, useMotionValue, useSpring } from 'svelte-motion';
+	import { Motion, useTransform, AnimatePresence, useMotionValue, useSpring } from 'svelte-motion'
 
 	interface Props {
 		items: {
-			id: number;
-			name: string;
-			designation: string;
-			image: string;
-		}[];
+			id: number
+			name: string
+			designation: string
+			image: string
+		}[]
 	}
 
-	let { items }: Props = $props();
+	let { items }: Props = $props()
 
-	let hoveredIndex: number | null = $state(null);
-	const springConfig = { stiffness: 100, damping: 5 };
-	const x = useMotionValue(0); // going to set this value on mouse move
+	let hoveredIndex: number | null = $state(null)
+	const springConfig = { stiffness: 100, damping: 5 }
+	const x = useMotionValue(0) // going to set this value on mouse move
 	// rotate the tooltip
-	const rotate = useSpring(useTransform(x, [-100, 100], [-45, 45]), springConfig);
+	const rotate = useSpring(useTransform(x, [-100, 100], [-45, 45]), springConfig)
 	// translate the tooltip
-	const translateX = useSpring(useTransform(x, [-100, 100], [-50, 50]), springConfig);
+	const translateX = useSpring(useTransform(x, [-100, 100], [-50, 50]), springConfig)
 	const handleMouseMove = (event: MouseEvent) => {
 		// @ts-expect-error unknown offsetWidth.
-		const halfWidth = event.target?.offsetWidth / 2;
-		x.set(event.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
-	};
+		const halfWidth = event.target?.offsetWidth / 2
+		x.set(event.offsetX - halfWidth) // set the x value, which is then used in transform and rotate
+	}
 </script>
 
 <div class="group flex flex-row">

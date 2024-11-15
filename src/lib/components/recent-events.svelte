@@ -1,5 +1,7 @@
-<script>
-	import EventCard from './event-card.svelte';
+<script lang="ts">
+	import EventCard from './event-card.svelte'
+
+	const { meetups }: { meetups: any } = $props()
 </script>
 
 <div
@@ -27,8 +29,8 @@
 	<section
 		class="relative z-20 grid grid-cols-1 mt-8 lg:mt-0 md:grid-cols-2 gap-8 lg:gap-16 anchor"
 	>
-		{#each [1, 2, 3] as key (key)}
-			<EventCard />
+		{#each meetups as meetup (meetup.title)}
+			<EventCard event={meetup} />
 		{/each}
 		<a
 			href="/events"

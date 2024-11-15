@@ -1,7 +1,7 @@
 <script>
-	import AkarIconsXFill from '~icons/akar-icons/x-fill';
-	import Container from '$lib/components/container.svelte';
-	import groupPhoto from '$lib/assets/group-2.jpg';
+	import AkarIconsXFill from '~icons/akar-icons/x-fill'
+	import Container from '$lib/components/container.svelte'
+	import groupPhoto from '$lib/assets/group-2.jpg'
 </script>
 
 <Container>

@@ -1,25 +1,25 @@
 <script lang="ts">
-	import mainLogo from '$lib/assets/logo.svg';
-	import whiteLogo from '$lib/assets/logo-putih.svg';
-	import { Themes } from '$lib/data/constants';
-	import { theme } from '$lib/data/store';
-	import DarkModeToggle from './dark-mode-toggle.svelte';
-	import { onMount } from 'svelte';
-	import { blur } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
-	import Link from './link.svelte';
+	import mainLogo from '$lib/assets/logo.svg'
+	import whiteLogo from '$lib/assets/logo-putih.svg'
+	import { Themes } from '$lib/data/constants'
+	import { theme } from '$lib/data/store'
+	import DarkModeToggle from './dark-mode-toggle.svelte'
+	import { onMount } from 'svelte'
+	import { blur } from 'svelte/transition'
+	import { quintOut } from 'svelte/easing'
+	import Link from './link.svelte'
 
-	let isDarkMode = $state(true);
-	let isLoaded = $state(false);
+	let isDarkMode = $state(true)
+	let isLoaded = $state(false)
 
 	$effect(() => {
-		isDarkMode = $theme === Themes.Dark;
-	});
+		isDarkMode = $theme === Themes.Dark
+	})
 
 	onMount(() => {
 		// to help avoid unwanted flashes of dark/light
-		isLoaded = true;
-	});
+		isLoaded = true
+	})
 </script>
 
 <header class="w-full p-4 md:px-8 lg:px-0 dark:bg-black bg-opacity-35 dark:text-white">

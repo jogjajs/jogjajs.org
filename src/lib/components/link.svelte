@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cn';
+	import { cn } from '$lib/utils/cn'
 
 	interface Props {
-		href: string;
-		extClass?: string;
-		children?: import('svelte').Snippet;
-		[key: string]: unknown;
+		href: string
+		extClass?: string
+		children?: import('svelte').Snippet
+		[key: string]: unknown
 	}
 
-	const { href, extClass, children, ...props }: Props = $props();
+	const { href, extClass, children, ...props }: Props = $props()
 </script>
 
 <a

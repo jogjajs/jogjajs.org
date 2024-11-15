@@ -1,10 +1,10 @@
 <script lang="ts">
 	interface Props {
-		showFade?: boolean;
-		children?: import('svelte').Snippet;
+		showFade?: boolean
+		children?: import('svelte').Snippet
 	}
 
-	let { showFade = true, children }: Props = $props();
+	let { showFade = true, children }: Props = $props()
 </script>
 
 <div

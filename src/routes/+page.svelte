@@ -1,9 +1,12 @@
-<script>
-	import GroupPhotos from '$lib/components/group-photos.svelte';
-	import Hero from '$lib/components/hero.svelte';
-	import Partners from '$lib/components/partners.svelte';
-	import RecentEvents from '$lib/components/recent-events.svelte';
-	import square from '$lib/assets/square-organ.svg';
+<script lang="ts">
+	import GroupPhotos from '$lib/components/group-photos.svelte'
+	import Hero from '$lib/components/hero.svelte'
+	import Partners from '$lib/components/partners.svelte'
+	import RecentEvents from '$lib/components/recent-events.svelte'
+	import square from '$lib/assets/square-organ.svg'
+	import type { PageServerData } from './$types'
+
+	const { data }: { data: PageServerData } = $props()
 </script>
 
 <Hero />
@@ -16,6 +19,6 @@
 		height="200"
 		class="absolute -left-[8.5rem] top-[5rem] md:top-[5rem] lg:top-[16rem] lg:-left-10 z-10 opacity-60"
 	/>
-	<RecentEvents />
+	<RecentEvents meetups={data.meetups} />
 </div>
 <Partners />
