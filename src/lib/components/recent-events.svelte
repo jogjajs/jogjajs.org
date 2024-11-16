@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { MappedMeetup } from '$lib/utils/types'
 	import EventCard from './event-card.svelte'
 
-	const { meetups }: { meetups: any } = $props()
+	const { meetups }: { meetups: MappedMeetup[] } = $props()
 </script>
 
 <div

@@ -1,6 +1,9 @@
-<script>
+<script lang="ts">
 	import Container from '$lib/components/container.svelte'
 	import EventCard from '$lib/components/event-card.svelte'
+	import type { PageServerData } from './$types'
+
+	const { data }: { data: PageServerData } = $props()
 </script>
 
 <div
@@ -27,8 +30,8 @@
 <Container>
 	<div class="flex flex-col mt-8 md:mt-16">
 		<section class="flex z-20 flex-wrap justify-center md:mt-0 gap-8 md:gap-28">
-			{#each [1, 2, 3] as key (key)}
-				<EventCard event={{}} />
+			{#each data.meetups as meetup}
+				<EventCard event={meetup} />
 			{/each}
 		</section>
 	</div>

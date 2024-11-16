@@ -1,11 +1,8 @@
 import { dayStart, isAfter, isEqual } from '@formkit/tempo'
-import type { Meetup } from './types'
+import type { EventStatus, MappedMeetup, Meetup } from './types'
 import cosmic from '$lib/data/cosmic'
 
-export function eventStatus(
-	isOpenRegistration: boolean,
-	eventDate: string | Date
-): 'closed' | 'open' | 'expired' {
+export function eventStatus(isOpenRegistration: boolean, eventDate: string | Date): EventStatus {
 	const today = dayStart(new Date())
 	const eventEarlyDate = dayStart(eventDate)
 	const isClosed = isEqual(today, eventEarlyDate)
@@ -24,9 +21,13 @@ export function eventStatus(
 	return 'open'
 }
 
-function mapData(data: Meetup[]) {
+export function mapData(data: Meetup[]): MappedMeetup[] {
+	if (typeof data !== 'object') {
+		throw Error('Data must be an array of meetups')
+	}
+
 	if (data.length === 0) {
-		return data
+		return []
 	}
 
 	return data.map((meet) => {

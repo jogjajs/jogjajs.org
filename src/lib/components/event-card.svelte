@@ -2,8 +2,9 @@
 	import AkarIconsLinkOut from '~icons/akar-icons/link-out'
 	import SpeakerTooltips from './speaker-tooltips.svelte'
 	import Link from './link.svelte'
+	import type { MappedMeetup } from '$lib/utils/types'
 
-	const { event }: { event: any } = $props()
+	const { event }: { event: MappedMeetup } = $props()
 
 	const speakers = event.speakers.map((speaker, idx) => ({
 		id: idx,
@@ -26,7 +27,9 @@
 
 	<div class="flex flex-col gap-4 pb-4 px-2">
 		<h3 class="text-xl font-bold text-balance">{event.title}</h3>
-		<SpeakerTooltips items={speakers} />
+		{#if speakers.length > 0}
+			<SpeakerTooltips items={speakers} />
+		{/if}
 		<div>
 			<p>{new Intl.DateTimeFormat('us', { dateStyle: 'full' }).format(new Date(event.date))}</p>
 			<p>at {event.venue}</p>
