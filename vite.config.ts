@@ -13,5 +13,12 @@ export default defineConfig({
 		? {
 				conditions: ['browser']
 			}
-		: undefined
+		: undefined,
+	test: {
+		coverage: {
+			provider: 'v8',
+			include: ['./src/lib/**/*.ts'], // Include only TypeScript files
+			reporter: ['text', 'json', 'html'] // Coverage reporters
+		}
+	}
 })
