@@ -7,6 +7,10 @@ on:
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
+    # TODO: setting env in Github Secrets
+    env:
+      BUCKET_SLUG: ${{ secrets.BUCKET_SLUG }}
+      BUCKET_READ_KEY: ${{ secrets.BUCKET_READ_KEY }}
 
     steps:
       - uses: actions/checkout@v3

@@ -1,6 +1,7 @@
 import { dayStart, isAfter, isEqual } from '@formkit/tempo'
 import type { EventStatus, MappedMeetup, Meetup } from './types'
 import cosmic from '$lib/data/cosmic'
+import { BUCKET_READ_KEY, BUCKET_SLUG } from '$env/static/private'
 
 export function eventStatus(isOpenRegistration: boolean, eventDate: string | Date): EventStatus {
 	const today = dayStart(new Date())
@@ -48,6 +49,48 @@ export function mapData(data: Meetup[]): MappedMeetup[] {
 	})
 }
 
+const mockMeetups: Meetup[] = [
+	{
+		title: 'Upcoming Meetup',
+		metadata: {
+			cover_image: {
+				imgix_url: 'https://example.com/image2.jpg',
+				url: 'https://example.com/image2.jpg'
+			},
+			is_open_registration: true,
+			date: '2025-01-01',
+			rsvp_link: 'https://example.com/rsvp2',
+			venue: 'Venue 2',
+			speakers: [
+				{
+					title: 'Speaker 2',
+					metadata: {
+						description: 'Another great speaker',
+						photo: {
+							imgix_url: 'https://example.com/speaker2.jpg',
+							url: 'https://example.com/speaker2.jpg'
+						}
+					}
+				}
+			]
+		}
+	},
+	{
+		title: 'Past Meetup',
+		metadata: {
+			cover_image: {
+				imgix_url: 'https://example.com/image1.jpg',
+				url: 'https://example.com/image1.jpg'
+			},
+			is_open_registration: false,
+			date: '2023-01-01',
+			rsvp_link: 'https://example.com/rsvp1',
+			venue: 'Venue 1',
+			speakers: []
+		}
+	}
+]
+
 export async function getMeetups(limit = 1000) {
 	if (typeof limit !== 'number' || limit < 0) {
 		throw Error('Limit must be uinteger (default: 1000)')
@@ -55,6 +98,12 @@ export async function getMeetups(limit = 1000) {
 
 	if (limit === 0) {
 		return []
+	}
+
+	// TODO: we should remove this validation after
+	// we have establish our env secrets in Github (I don't have access to do that lol)
+	if (!BUCKET_READ_KEY || !BUCKET_SLUG) {
+		return mapData(mockMeetups)
 	}
 
 	try {
