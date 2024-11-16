@@ -48,16 +48,29 @@ function mapData(data: Meetup[]) {
 }
 
 export async function getMeetups(limit = 1000) {
-	const { objects: data } = await cosmic.objects
-		.find({
-			type: 'meetups'
-		})
-		.props(['title', 'metadata'])
-		.depth(1)
-		.limit(limit)
-		.sort('-metadata.date')
+	if (typeof limit !== 'number' || limit < 0) {
+		throw Error('Limit must be uinteger (default: 1000)')
+	}
 
-	const mappedData = mapData(data)
+	if (limit === 0) {
+		return []
+	}
 
-	return mappedData
+	try {
+		const { objects: data } = await cosmic.objects
+			.find({
+				type: 'meetups'
+			})
+			.props(['title', 'metadata'])
+			.depth(1)
+			.limit(limit)
+			.sort('-metadata.date')
+
+		const mappedData = mapData(data)
+
+		return mappedData
+	} catch (error) {
+		console.error(error)
+		throw Error(error)
+	}
 }
