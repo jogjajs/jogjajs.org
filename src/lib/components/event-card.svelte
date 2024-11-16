@@ -32,7 +32,7 @@
 			<p>at {event.venue}</p>
 
 			<div class="flex items-center gap-6 mt-4">
-				{#if event.isStillActive}
+				{#if event.status === 'open'}
 					<Link
 						target="_blank"
 						rel="noopener noreferrer"
@@ -40,6 +40,8 @@
 						extClass="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500"
 						>Get RSVP <AkarIconsLinkOut width="15" height="15" /></Link
 					>
+				{:else if event.status === 'closed'}
+					<p>Registration is already closed 👀</p>
 				{/if}
 			</div>
 		</div>
