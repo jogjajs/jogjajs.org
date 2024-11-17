@@ -1,4 +1,4 @@
-import { addDay, format } from '@formkit/tempo'
+import { addDay } from '@formkit/tempo'
 import { describe, expect, it, test, vi } from 'vitest'
 import { eventStatus, getMeetups, getUpcomingMeetup, mapData } from '../meetup'
 import type { MappedMeetup, Meetup } from '../types'

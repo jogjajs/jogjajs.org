@@ -1,7 +1,7 @@
 import { dayStart, isAfter, isEqual } from '@formkit/tempo'
 import type { EventStatus, MappedMeetup, Meetup } from './types'
 import cosmic from '$lib/data/cosmic'
-import { BUCKET_READ_KEY, BUCKET_SLUG } from '$env/static/private'
+import { PUBLIC_BUCKET_READ_KEY, PUBLIC_BUCKET_SLUG } from '$env/static/public'
 
 export function eventStatus(isOpenRegistration: boolean, eventDate: string | Date): EventStatus {
 	const today = dayStart(new Date())
@@ -102,7 +102,7 @@ export async function getMeetups(limit = 1000) {
 
 	// TODO: we should remove this validation after
 	// we have establish our env secrets in Github (I don't have access to do that lol)
-	if (!BUCKET_READ_KEY || !BUCKET_SLUG) {
+	if (!PUBLIC_BUCKET_READ_KEY || !PUBLIC_BUCKET_SLUG) {
 		return mapData(mockMeetups)
 	}
 

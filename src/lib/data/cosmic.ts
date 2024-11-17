@@ -1,9 +1,9 @@
-import { BUCKET_READ_KEY, BUCKET_SLUG } from '$env/static/private'
 import { createBucketClient } from '@cosmicjs/sdk'
+import { PUBLIC_BUCKET_READ_KEY, PUBLIC_BUCKET_SLUG } from '$env/static/public'
 
 const cosmic = createBucketClient({
-	bucketSlug: BUCKET_SLUG ?? '',
-	readKey: BUCKET_READ_KEY ?? ''
+	bucketSlug: PUBLIC_BUCKET_SLUG ?? '',
+	readKey: PUBLIC_BUCKET_READ_KEY ?? ''
 })
 
 export default cosmic
