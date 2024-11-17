@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AkarIconsLinkOut from '~icons/akar-icons/link-out'
 	import logo from '$lib/assets/logo-putih.svg'
 </script>
 
@@ -12,6 +13,13 @@
 				<a href="/events" class="hover:underline">Events</a>
 				<a href="/about" class="hover:underline">About us</a>
 				<a href="/code-of-conduct" class="hover:underline">Code of Conduct</a>
+				<a
+					href="https://bit.ly/logo-jogjajs"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:underline flex items-center gap-1"
+					>Brand assets <AkarIconsLinkOut class="w-3.5 h-3.5" /></a
+				>
 			</div>
 			<div class="md:justify-self-center flex flex-col gap-2">
 				<b class="mb-2">Socials</b>
