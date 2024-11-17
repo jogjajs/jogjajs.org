@@ -1,19 +1,32 @@
 <script lang="ts">
+	import { getUpcomingMeetup } from '$lib/utils/meetup'
+	import type { MappedMeetup } from '$lib/utils/types'
+	import { format } from '@formkit/tempo'
 	import GridBackground from './grid-background.svelte'
+
+	interface Props {
+		meetups: MappedMeetup[]
+	}
+
+	const { meetups }: Props = $props()
+
+	const upcomingTalk: MappedMeetup = getUpcomingMeetup(meetups)
 </script>
 
 <GridBackground>
 	<section
 		class="relative flex flex-col bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent justify-center items-center text-center max-w-2xl mx-auto"
 	>
-		<div
-			class="absolute -top-14 text-black dark:text-pink-50 bg-red-50 dark:bg-pink-800 border border-red-300 dark:border-pink-600 py-1 px-2 inline-flex items-center rounded-2xl text-sm space-x-2"
-		>
-			<span
-				class="animate-pulse border border-red-500 bg-red-400 dark:bg-pink-300 dark:border-pink-400 w-2.5 h-2.5 rounded-full"
-			></span>
-			<span> Upcoming talks on 7 March </span>
-		</div>
+		{#if upcomingTalk}
+			<div
+				class="absolute -top-14 text-black dark:text-pink-50 bg-red-50 dark:bg-pink-800 border border-red-300 dark:border-pink-600 py-1 px-2 inline-flex items-center rounded-2xl text-sm space-x-2"
+			>
+				<span
+					class="animate-pulse border border-red-500 bg-red-400 dark:bg-pink-300 dark:border-pink-400 w-2.5 h-2.5 rounded-full"
+				></span>
+				<span> Upcoming talks on {format(upcomingTalk.date, 'medium')} </span>
+			</div>
+		{/if}
 
 		<h1
 			class="text-4xl md:text-5xl font-bold leading-tight text-gray-600 text-balance dark:text-transparent"

@@ -9,7 +9,7 @@
 	const { data }: { data: PageServerData } = $props()
 </script>
 
-<Hero />
+<Hero meetups={data.meetups} />
 <GroupPhotos />
 <div class="relative">
 	<img
