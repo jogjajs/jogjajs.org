@@ -17,7 +17,7 @@ export default defineConfig({
 	test: {
 		coverage: {
 			provider: 'v8',
-			include: ['./src/lib/**/*.ts'], // Include only TypeScript files
+			include: ['src/lib/**/*.ts'], // Include only TypeScript files
 			reporter: ['text', 'json', 'html'] // Coverage reporters
 		}
 	}

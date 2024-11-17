@@ -1,7 +1,7 @@
-import { addDay } from '@formkit/tempo'
+import { addDay, format } from '@formkit/tempo'
 import { describe, expect, it, test, vi } from 'vitest'
-import { eventStatus, getMeetups, mapData } from '../meetup'
-import type { Meetup } from '../types'
+import { eventStatus, getMeetups, getUpcomingMeetup, mapData } from '../meetup'
+import type { MappedMeetup, Meetup } from '../types'
 
 describe('Event status', () => {
 	const today = new Date()
@@ -258,5 +258,64 @@ describe('Mapping meetups data', () => {
 	it('should throw an error for invalid input', () => {
 		expect(() => mapData(null as unknown as Meetup[])).toThrow() // Passing null
 		expect(() => mapData(undefined as unknown as Meetup[])).toThrow() // Passing undefined
+	})
+
+	it('should return upcoming talk for future meetup', () => {
+		const meetups: MappedMeetup[] = [
+			{
+				status: 'open',
+				isOpenRegistration: true,
+				title: 'Meetup with no speakers',
+				coverImageUrl: 'https://example.com/image.jpg',
+				rsvpLink: 'https://example.com/rsvp',
+				venue: 'Sample Venue',
+				date: addDay(new Date(), 1).toISOString(),
+				speakers: []
+			}
+		]
+
+		expect(getUpcomingMeetup(meetups)).not.toBeNull()
+		expect(getUpcomingMeetup(meetups)).toHaveProperty('title')
+	})
+
+	it('should return upcoming talk for today meetup', () => {
+		const meetups: MappedMeetup[] = [
+			{
+				status: 'open',
+				isOpenRegistration: true,
+				title: 'Meetup with no speakers',
+				coverImageUrl: 'https://example.com/image.jpg',
+				rsvpLink: 'https://example.com/rsvp',
+				venue: 'Sample Venue',
+				date: new Date().toISOString(),
+				speakers: []
+			}
+		]
+
+		expect(getUpcomingMeetup(meetups)).not.toBeNull()
+		expect(getUpcomingMeetup(meetups)).toHaveProperty('title')
+	})
+
+	it('should not return upcoming talk for past meetup', () => {
+		const meetups: MappedMeetup[] = [
+			{
+				status: 'open',
+				isOpenRegistration: true,
+				title: 'Meetup with no speakers',
+				coverImageUrl: 'https://example.com/image.jpg',
+				rsvpLink: 'https://example.com/rsvp',
+				venue: 'Sample Venue',
+				date: addDay(new Date(), -1).toISOString(),
+				speakers: []
+			}
+		]
+
+		expect(getUpcomingMeetup(meetups)).toBeNull()
+	})
+
+	it('should not return upcoming talk when meetup is empty', () => {
+		const meetups: MappedMeetup[] = []
+
+		expect(getUpcomingMeetup(meetups)).toBeNull()
 	})
 })

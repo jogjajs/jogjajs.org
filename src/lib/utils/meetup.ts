@@ -124,3 +124,18 @@ export async function getMeetups(limit = 1000) {
 		throw Error(error)
 	}
 }
+
+export function getUpcomingMeetup(meetups: MappedMeetup[]) {
+	if (meetups?.length === 0) {
+		return null
+	}
+
+	const latestMeetup = meetups[0]
+	const isUpcoming = isAfter(latestMeetup.date, new Date())
+
+	if (isUpcoming) {
+		return latestMeetup
+	}
+
+	return null
+}
