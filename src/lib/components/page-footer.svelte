@@ -37,24 +37,16 @@
 		<div
 			class="flex flex-col md:flex-row justify-between items-center md:items-end mt-20 gap-4 md:gap-0"
 		>
-			<div class="flex items-center md:items-start flex-col gap-2">
-				<img
-					src={logo}
-					alt="JogjaJS logo"
-					width="100"
-					height="100"
-					decoding="async"
-					loading="lazy"
-				/>
-				<p>
-					Made with <a href="https://kit.svelte.dev" class="font-semibold hover:underline"
-						>SvelteKit</a
-					>
-					and
-					<a href="https://tailwindcss.com" class="font-semibold hover:underline">Tailwind CSS</a>.
-				</p>
-			</div>
-			<p>© 2014-present JogjaJS. All rights reserved.</p>
+			<img
+				src={logo}
+				alt="JOGJAJS logo"
+				title="JogjaJS logo"
+				width="100"
+				height="100"
+				decoding="async"
+				loading="lazy"
+			/>
+			<p>© 2014-present JOGJAJS. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
