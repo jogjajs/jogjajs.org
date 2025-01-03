@@ -17,7 +17,7 @@ importers:
       '@eslint/js':
         specifier: ^9.17.0
         version: 9.17.0
-      '@fontsource/overpass':
+      '@fontsource-variable/overpass':
         specifier: ^5.1.2
         version: 5.1.2
       '@iconify-json/akar-icons':
@@ -460,8 +460,8 @@ packages:
     resolution: {integrity: sha512-zSkKow6H5Kdm0ZUQUB2kV5JIXqoG0+uH5YADhaEHswm664N9Db8dXSi0nMJpacpMf+MyyglF1vnZohpEg5yUtg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/overpass@5.1.2':
-    resolution: {integrity: sha512-n1/s14h7mIbIVguGK97WLtpXhDwZiIbAAgcpXx+SL+xOCr9wjkDALLoKBAO01HpWbtKzs5iaUSmuISKctVEaXA==}
+  '@fontsource-variable/overpass@5.1.2':
+    resolution: {integrity: sha512-9RULPRFlP3V9Yvt+9erCoJ0MfEU7uE2BUpBdyPygk6SwJESn4oEzTDls4w7EZ4TwCXWZ03HowE9K06wn7dvnDQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2286,7 +2286,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@fontsource/overpass@5.1.2': {}
+  '@fontsource-variable/overpass@5.1.2': {}
 
   '@humanfs/core@0.19.1': {}
 

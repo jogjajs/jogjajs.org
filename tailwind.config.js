@@ -44,7 +44,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Overpass', ...defaultTheme.fontFamily.sans]
+				sans: ['Overpass Variable', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},

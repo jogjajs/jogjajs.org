@@ -19,7 +19,7 @@
 		"@arisbh/marqueeck": "^0.5.1",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.17.0",
-		"@fontsource/overpass": "^5.1.2",
+		"@fontsource-variable/overpass": "^5.1.2",
 		"@iconify-json/akar-icons": "^1.2.2",
 		"@playwright/test": "^1.49.1",
 		"@sveltejs/adapter-static": "^3.0.8",
