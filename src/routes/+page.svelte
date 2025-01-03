@@ -1,9 +1,9 @@
 <script>
-	import GroupPhotos from '$lib/components/group-photos.svelte';
-	import Hero from '$lib/components/hero.svelte';
-	import Partners from '$lib/components/partners.svelte';
-	import RecentEvents from '$lib/components/recent-events.svelte';
-	import square from '$lib/assets/square-organ.svg';
+	import GroupPhotos from '$lib/components/group-photos.svelte'
+	import Hero from '$lib/components/hero.svelte'
+	import Partners from '$lib/components/partners.svelte'
+	import RecentEvents from '$lib/components/recent-events.svelte'
+	import square from '$lib/assets/square-organ.svg'
 </script>
 
 <Hero />

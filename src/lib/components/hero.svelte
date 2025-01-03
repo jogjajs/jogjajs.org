@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GridBackground from './grid-background.svelte';
+	import GridBackground from './grid-background.svelte'
 </script>
 
 <GridBackground>

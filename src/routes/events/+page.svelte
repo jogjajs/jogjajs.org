@@ -1,6 +1,6 @@
 <script>
-	import Container from '$lib/components/container.svelte';
-	import EventCard from '$lib/components/event-card.svelte';
+	import Container from '$lib/components/container.svelte'
+	import EventCard from '$lib/components/event-card.svelte'
 </script>
 
 <div

@@ -1,5 +1,5 @@
 <script>
-	import EventCard from './event-card.svelte';
+	import EventCard from './event-card.svelte'
 </script>
 
 <div

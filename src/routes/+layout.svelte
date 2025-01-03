@@ -1,13 +1,13 @@
 <script lang="ts">
-	import '$lib/assets/global.css';
+	import '$lib/assets/global.css'
 
-	import PageFooter from '$lib/components/page-footer.svelte';
-	import PageHeader from '$lib/components/page-header.svelte';
+	import PageFooter from '$lib/components/page-footer.svelte'
+	import PageHeader from '$lib/components/page-header.svelte'
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: import('svelte').Snippet
 	}
 
-	let { children }: Props = $props();
+	let { children }: Props = $props()
 </script>
 
 <svelte:head>

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import AkarIconsLinkOut from '~icons/akar-icons/link-out';
-	import sample from '$lib/assets/event-sample.jpg';
-	import SpeakerTooltips from './speaker-tooltips.svelte';
-	import Link from './link.svelte';
+	import AkarIconsLinkOut from '~icons/akar-icons/link-out'
+	import sample from '$lib/assets/event-sample.jpg'
+	import SpeakerTooltips from './speaker-tooltips.svelte'
+	import Link from './link.svelte'
 	const people = [
 		{
 			id: 1,
@@ -25,7 +25,7 @@
 			image:
 				'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
 		}
-	];
+	]
 </script>
 
 <div

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo-putih.svg';
+	import logo from '$lib/assets/logo-putih.svg'
 </script>
 
 <footer class="relative w-full bg-red-600 dark:bg-red-700 text-white">
