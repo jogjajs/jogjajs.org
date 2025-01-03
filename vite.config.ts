@@ -9,7 +9,16 @@ export default defineConfig({
 			compiler: 'svelte'
 		})
 	],
+	resolve: process.env.VITEST
+		? {
+				conditions: ['browser']
+			}
+		: undefined,
 	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
+		coverage: {
+			provider: 'v8',
+			include: ['src/lib/**/*.ts'], // Include only TypeScript files
+			reporter: ['text', 'json', 'html'] // Coverage reporters
+		}
 	}
 })
