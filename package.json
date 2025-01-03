@@ -22,7 +22,7 @@
 		"@fontsource/overpass": "^5.1.2",
 		"@iconify-json/akar-icons": "^1.2.2",
 		"@playwright/test": "^1.49.1",
-		"@sveltejs/adapter-cloudflare": "^5.0.0",
+		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.15.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
