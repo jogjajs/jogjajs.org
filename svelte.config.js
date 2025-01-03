@@ -1,17 +1,11 @@
 import adapter from '@sveltejs/adapter-static';
-import type { Config } from '@sveltejs/kit';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import Icons from 'unplugin-icons/vite';
 
-const config = <Config>{
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
 	kit: {
 		adapter: adapter()
 	},
-	vitePlugin: [
-		Icons({
-			compiler: 'svelte'
-		})
-	],
 	preprocess: vitePreprocess()
 };
 
