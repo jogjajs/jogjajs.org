@@ -12,3 +12,10 @@ export interface Meetup {
 }
 
 export type EventStatus = 'open' | 'closed' | 'expired'
+
+export interface Partner {
+	name: string
+	link: string
+	logoPath: string
+	partnershipType: 'org' | 'media'
+}

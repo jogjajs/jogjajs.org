@@ -6,7 +6,7 @@
 	import square from '$lib/assets/square-organ.svg'
 	import type { LayoutData } from './$types'
 
-	let { data }: { data: LayoutData } = $props()
+	const { data }: { data: LayoutData } = $props()
 </script>
 
 <Hero meetups={data.meetups} />
@@ -21,4 +21,4 @@
 	/>
 	<RecentEvents meetups={data.meetups} />
 </div>
-<Partners />
+<Partners data={data.partners} />
