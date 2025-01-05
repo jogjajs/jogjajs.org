@@ -7,10 +7,9 @@
 	import type { LayoutData } from './$types'
 
 	let { data }: { data: LayoutData } = $props()
-	console.log(data)
 </script>
 
-<Hero />
+<Hero meetups={data.meetups} />
 <GroupPhotos />
 <div class="relative">
 	<img
@@ -20,6 +19,6 @@
 		height="200"
 		class="absolute -left-[8.5rem] top-[5rem] md:top-[5rem] lg:top-[16rem] lg:-left-10 z-10 opacity-60"
 	/>
-	<RecentEvents />
+	<RecentEvents meetups={data.meetups} />
 </div>
 <Partners />

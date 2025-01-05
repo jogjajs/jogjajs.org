@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
+	import type { Meetup } from '$lib/utils/types'
 	import EventCard from './event-card.svelte'
+
+	let { meetups }: { meetups: Meetup[] } = $props()
 </script>
 
 <div
@@ -27,8 +30,8 @@
 	<section
 		class="relative z-20 grid grid-cols-1 mt-8 lg:mt-0 md:grid-cols-2 gap-8 lg:gap-16 anchor"
 	>
-		{#each [1, 2, 3] as key (key)}
-			<EventCard />
+		{#each meetups as meetup (meetup.title)}
+			<EventCard {meetup} />
 		{/each}
 		<a
 			href="/events"

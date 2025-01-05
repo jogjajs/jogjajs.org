@@ -23,6 +23,9 @@ importers:
       '@fontsource-variable/overpass':
         specifier: ^5.1.2
         version: 5.1.2
+      '@formkit/tempo':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@iconify-json/akar-icons':
         specifier: ^1.2.2
         version: 1.2.2
@@ -347,6 +350,9 @@ packages:
 
   '@fontsource-variable/overpass@5.1.2':
     resolution: {integrity: sha512-9RULPRFlP3V9Yvt+9erCoJ0MfEU7uE2BUpBdyPygk6SwJESn4oEzTDls4w7EZ4TwCXWZ03HowE9K06wn7dvnDQ==}
+
+  '@formkit/tempo@0.1.2':
+    resolution: {integrity: sha512-jNPPbjL8oj7hK3eHX++CwbR6X4GKQt+x00/q4yeXkwynXHGKL27dylYhpEgwrmediPP4y7s0XtN1if/M/JYujg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2114,6 +2120,8 @@ snapshots:
       levn: 0.4.1
 
   '@fontsource-variable/overpass@5.1.2': {}
+
+  '@formkit/tempo@0.1.2': {}
 
   '@humanfs/core@0.19.1': {}
 
