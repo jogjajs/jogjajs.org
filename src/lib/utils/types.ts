@@ -10,3 +10,5 @@ export interface Meetup {
 		photoUrl: string
 	}[]
 }
+
+export type EventStatus = 'open' | 'closed' | 'expired'

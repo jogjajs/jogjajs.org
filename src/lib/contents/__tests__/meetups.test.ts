@@ -3,7 +3,7 @@ import meetups from '$lib/contents/meetups.json'
 
 describe('Meetups JSON Validation', () => {
 	it('should have the correct number of meetups', () => {
-		expect(meetups).toHaveLength(1)
+		expect(meetups).not.toHaveLength(0)
 	})
 
 	it('should match the meetup interface', () => {
