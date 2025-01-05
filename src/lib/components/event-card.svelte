@@ -30,7 +30,7 @@
 		<h3 class="text-xl font-bold text-balance">{meetup.title}</h3>
 		<SpeakerTooltips items={speakers} />
 		<div>
-			<p>{format(meetup.date, 'full')}</p>
+			<p>{format(meetup.date, 'dddd, D MMMM YYYY')}</p>
 			<p>at {meetup.venue}</p>
 
 			<div class="flex items-center gap-6 mt-4">
