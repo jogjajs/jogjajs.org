@@ -1,9 +1,13 @@
-<script>
+<script lang="ts">
 	import GroupPhotos from '$lib/components/group-photos.svelte'
 	import Hero from '$lib/components/hero.svelte'
 	import Partners from '$lib/components/partners.svelte'
 	import RecentEvents from '$lib/components/recent-events.svelte'
 	import square from '$lib/assets/square-organ.svg'
+	import type { LayoutData } from './$types'
+
+	let { data }: { data: LayoutData } = $props()
+	console.log(data)
 </script>
 
 <Hero />
