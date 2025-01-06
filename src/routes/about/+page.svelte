@@ -1,7 +1,10 @@
-<script>
-	import AkarIconsXFill from '~icons/akar-icons/x-fill'
+<script lang="ts">
 	import Container from '$lib/components/container.svelte'
 	import groupPhoto from '$lib/assets/group-2.jpg'
+	import type { LayoutData } from '../$types'
+	import ContactIcon from './contact-icon.svelte'
+
+	const { data }: { data: LayoutData } = $props()
 </script>
 
 <Container>
@@ -73,23 +76,28 @@
 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, vero.
 		</p>
 		<div class="flex flex-wrap justify-center gap-14 mt-8">
-			{#each [1, 2, 4, 5, 3, 55, 67, 11] as idx (idx)}
+			{#each data.organizers as org (org.name)}
 				<div class="text-center flex flex-col items-center">
 					<img
-						src="https://api.dicebear.com/8.x/bottts-neutral/svg"
+						src={org.photoPath}
 						width="150"
 						height="150"
-						alt="Avatar"
+						alt={`${org.name} avatar`}
 						class="mb-3"
 					/>
-					<p>Joe</p>
-					<small class="text-gray-600 dark:text-gray-400">Frontend engineer, XOE</small>
-					<a
-						href="/"
-						title="Twitter"
-						class="rounded-full p-1 mt-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-xs"
-						><AkarIconsXFill /></a
-					>
+					<p>{org.name}</p>
+					<small class="text-gray-600 dark:text-gray-400">{org.shortBio}</small>
+					<div class="flex items-center gap-2">
+						{#each org.contacts as contact, idx (idx)}
+							<a
+								href={contact.url}
+								title={contact.name}
+								class="rounded-full p-1 mt-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-xs"
+							>
+								<ContactIcon name={contact.name} />
+							</a>
+						{/each}
+					</div>
 				</div>
 			{/each}
 		</div>
