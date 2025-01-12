@@ -1,7 +1,7 @@
 <script>
-	import Marqueeck from '@arisbh/marqueeck';
-	import group1 from '$lib/assets/group-1.jpg';
-	import group2 from '$lib/assets/group-2.jpg';
+	import Marqueeck from '@arisbh/marqueeck'
+	import group1 from '$lib/assets/group-1.jpg'
+	import group2 from '$lib/assets/group-2.jpg'
 </script>
 
 <div class="max-w-screen-lg mx-auto mt-16 md:mt-32 mb-8 text-center p-4 md:p-0">

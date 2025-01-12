@@ -1,5 +1,6 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo-putih.svg';
+	import AkarIconsLinkOut from '~icons/akar-icons/link-out'
+	import logo from '$lib/assets/logo-putih.svg'
 </script>
 
 <footer class="relative w-full bg-red-600 dark:bg-red-700 text-white">
@@ -12,6 +13,13 @@
 				<a href="/events" class="hover:underline">Events</a>
 				<a href="/about" class="hover:underline">About us</a>
 				<a href="/code-of-conduct" class="hover:underline">Code of Conduct</a>
+				<a
+					href="https://bit.ly/logo-jogjajs"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:underline flex items-center gap-1"
+					>Brand assets <AkarIconsLinkOut class="w-3.5 h-3.5" /></a
+				>
 			</div>
 			<div class="md:justify-self-center flex flex-col gap-2">
 				<b class="mb-2">Socials</b>
@@ -37,24 +45,16 @@
 		<div
 			class="flex flex-col md:flex-row justify-between items-center md:items-end mt-20 gap-4 md:gap-0"
 		>
-			<div class="flex items-center md:items-start flex-col gap-2">
-				<img
-					src={logo}
-					alt="JogjaJS logo"
-					width="100"
-					height="100"
-					decoding="async"
-					loading="lazy"
-				/>
-				<p>
-					Made with <a href="https://kit.svelte.dev" class="font-semibold hover:underline"
-						>SvelteKit</a
-					>
-					and
-					<a href="https://tailwindcss.com" class="font-semibold hover:underline">Tailwind CSS</a>.
-				</p>
-			</div>
-			<p>© 2014-present JogjaJS. All rights reserved.</p>
+			<img
+				src={logo}
+				alt="JOGJAJS logo"
+				title="JogjaJS logo"
+				width="100"
+				height="100"
+				decoding="async"
+				loading="lazy"
+			/>
+			<p>© 2014-present JOGJAJS. All rights reserved.</p>
 		</div>
 	</div>
 </footer>

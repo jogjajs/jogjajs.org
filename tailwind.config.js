@@ -1,17 +1,15 @@
-import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
-import defaultTheme from 'tailwindcss/defaultTheme';
-import aspectRatio from '@tailwindcss/aspect-ratio';
-import svgToDataUri from 'mini-svg-data-uri';
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette'
+import defaultTheme from 'tailwindcss/defaultTheme'
+import aspectRatio from '@tailwindcss/aspect-ratio'
+import svgToDataUri from 'mini-svg-data-uri'
 
 function addVariablesForColors({ addBase, theme }) {
-	let allColors = flattenColorPalette(theme('colors'));
-	let newVars = Object.fromEntries(
-		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	);
+	let allColors = flattenColorPalette(theme('colors'))
+	let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]))
 
 	addBase({
 		':root': newVars
-	});
+	})
 }
 
 function addBgGrid({ matchUtilities, theme }) {
@@ -34,7 +32,7 @@ function addBgGrid({ matchUtilities, theme }) {
 			})
 		},
 		{ values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
-	);
+	)
 }
 
 /** @type {import('tailwindcss').Config} */
@@ -44,9 +42,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Overpass', ...defaultTheme.fontFamily.sans]
+				sans: ['Overpass Variable', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
 	plugins: [aspectRatio, addVariablesForColors, addBgGrid]
-};
+}

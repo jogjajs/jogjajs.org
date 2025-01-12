@@ -1,0 +1,85 @@
+[
+	{
+		"name": "John Doe 1",
+		"photoPath": "/assets/organizers/example.jpg",
+		"shortBio": "System Engineer, Google",
+		"contacts": [
+			{
+				"name": "linkedin",
+				"url": "https://linkedin.com/in/john"
+			},
+			{
+				"name": "x",
+				"url": "https://x.com/j"
+			}
+		]
+	},
+	{
+		"name": "John Doe 2",
+		"photoPath": "/assets/organizers/example.jpg",
+		"shortBio": "System Engineer, Google",
+		"contacts": [
+			{
+				"name": "web",
+				"url": "https://linkedin.com/in/john"
+			},
+			{
+				"name": "instagram",
+				"url": "https://x.com/j"
+			}
+		]
+	},
+	{
+		"name": "John Doe 3",
+		"photoPath": "/assets/organizers/example.jpg",
+		"shortBio": "System Engineer, Google",
+		"contacts": [
+			{
+				"name": "web",
+				"url": "https://linkedin.com/in/john"
+			},
+			{
+				"name": "instagram",
+				"url": "https://x.com/j"
+			},
+			{
+				"name": "linkedin",
+				"url": "https://x.com/j"
+			},
+			{
+				"name": "x",
+				"url": "https://x.com/j"
+			}
+		]
+	},
+	{
+		"name": "John Doe 4",
+		"photoPath": "/assets/organizers/example.jpg",
+		"shortBio": "System Engineer, Google",
+		"contacts": [
+			{
+				"name": "web",
+				"url": "https://linkedin.com/in/john"
+			}
+		]
+	},
+	{
+		"name": "John Doe 5",
+		"photoPath": "/assets/organizers/example.jpg",
+		"shortBio": "System Engineer, Google",
+		"contacts": [
+			{
+				"name": "instagram",
+				"url": "https://linkedin.com/in/john"
+			},
+			{
+				"name": "x",
+				"url": "https://linkedin.com/in/john"
+			},
+			{
+				"name": "web",
+				"url": "https://linkedin.com/in/john"
+			}
+		]
+	}
+]

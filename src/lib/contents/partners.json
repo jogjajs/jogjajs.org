@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Media Indonesia 1",
+		"partnershipType": "media",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Media Indonesia 2",
+		"partnershipType": "media",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Media Indonesia 3",
+		"partnershipType": "media",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Org Indonesia 1",
+		"partnershipType": "org",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Org Indonesia 2",
+		"partnershipType": "org",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Org Indonesia 3",
+		"partnershipType": "org",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Org Indonesia 4",
+		"partnershipType": "org",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	},
+	{
+		"name": "Org Indonesia 5",
+		"partnershipType": "org",
+		"logoPath": "/assets/partners/sample.png",
+		"link": "https://media.id"
+	}
+]

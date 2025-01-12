@@ -1,0 +1,40 @@
+[
+	{
+		"title": "Tech Conference 2025",
+		"coverImageUrl": "/assets/meetups/event-sample.jpg",
+		"rsvpLink": "https://example.com/rsvp",
+		"venue": "Convention Center",
+		"date": "2025-01-10",
+		"speakers": [
+			{
+				"name": "John Doe",
+				"description": "Software Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Jane Smith",
+				"description": "Data Scientist",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "Tech Conference 2024",
+		"coverImageUrl": "/assets/meetups/event-sample.jpg",
+		"rsvpLink": "https://example.com/rsvp",
+		"venue": "Convention Center",
+		"date": "2024-01-10",
+		"speakers": [
+			{
+				"name": "John Doe",
+				"description": "Software Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Jane Smith",
+				"description": "Data Scientist",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	}
+]
