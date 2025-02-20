@@ -11,7 +11,7 @@
 
 <GridBackground>
 	<section
-		class="relative flex flex-col bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent justify-center items-center text-center max-w-2xl mx-auto"
+		class="relative flex flex-col bg-linear-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent justify-center items-center text-center max-w-2xl mx-auto"
 	>
 		{#if upcomingMeetup}
 			<div

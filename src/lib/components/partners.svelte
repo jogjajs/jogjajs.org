@@ -4,7 +4,7 @@
 	const { data }: { data: { media: Partner[]; orgs: Partner[] } } = $props()
 </script>
 
-<div class="mt-32 max-w-screen-lg mx-auto space-y-16 px-4 md:px-0">
+<div class="mt-32 max-w-(--breakpoint-lg) mx-auto space-y-16 px-4 md:px-0">
 	<section class="text-center">
 		<h2 class="text-3xl md:text-4xl font-bold leading-relaxed">Our Partners</h2>
 		<p class="text-gray-400 dark:text-gray-400 text-balance">

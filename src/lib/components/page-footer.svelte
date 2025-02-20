@@ -5,7 +5,7 @@
 
 <footer class="relative w-full bg-red-600 dark:bg-red-700 text-white">
 	<span aria-hidden="true" class="onthel-bg"></span>
-	<div class="max-w-screen-lg mx-auto py-12 px-4 md:px-8 lg:px-0">
+	<div class="max-w-(--breakpoint-lg) mx-auto py-12 px-4 md:px-8 lg:px-0">
 		<div class="grid grid-cols-2 md:grid-cols-3 w-full gap-8">
 			<div class="md:justify-self-start flex flex-col gap-2">
 				<b class="mb-2">Explore</b>

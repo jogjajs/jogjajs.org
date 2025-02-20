@@ -11,7 +11,7 @@
 	<section class="mb-28 px-4 md:px-8 lg:px-0">
 		<h1
 			class="text-3xl md:text-6xl font-bold tracking-tight text-transparent
-      bg-clip-text bg-gradient-to-b from-red-600/65 to-red-600/100 dark:from-red-500/40 dark:to-red-500/80"
+      bg-clip-text bg-linear-to-b from-red-600/65 to-red-600/100 dark:from-red-500/40 dark:to-red-500/80"
 		>
 			About JOGJAJS
 		</h1>
@@ -19,7 +19,7 @@
 
 	<div class="relative">
 		<span
-			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-linear-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
 			>2018</span
 		>
 		<figure>
@@ -42,7 +42,7 @@
 
 	<figure class="relative mt-16">
 		<span
-			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-gradient-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
+			class="year absolute top-[3px] -left-[57px] md:-left-[115px] font-bold text-5xl md:text-7xl font-mono text-transparent bg-clip-text bg-linear-to-b from-red-500 dark:from-gray-500 to-violet-950 dark:to-gray-300"
 			>2018</span
 		>
 		<img src={groupPhoto} alt="Group hahah" />
