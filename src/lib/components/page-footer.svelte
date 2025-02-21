@@ -12,7 +12,6 @@
 				<a href="/" class="hover:underline">Home</a>
 				<a href="/events" class="hover:underline">Events</a>
 				<a href="/about" class="hover:underline">About us</a>
-				<a href="/code-of-conduct" class="hover:underline">Code of Conduct</a>
 				<a
 					href="https://bit.ly/logo-jogjajs"
 					target="_blank"
