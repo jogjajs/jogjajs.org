@@ -10,7 +10,7 @@
 
 <Seo
 	title="About Us | JogjaJS"
-	description="About the history and meet the peple behind JogjaJS community"
+	description="Discover the history and the passionate people behind JogjaJS, a thriving JavaScript community in Yogyakarta."
 />
 
 <Container>

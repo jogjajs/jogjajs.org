@@ -21,12 +21,12 @@
 	<meta name="twitter:site" content="@jogjajs" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="og:title" content={title} />
-	<meta name="og:url" content={url} />
-	<meta name="og:type" content="website" />
-	<meta name="og:description" content={description} />
-	<meta name="og:image" content="/og.png" />
-	<meta name="og:site_name" content="Official JogjaJS website" />
+	<meta property="og:title" content={title} />
+	<meta property="og:url" content={url} />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="/og.png" />
+	<meta property="og:site_name" content="Official JogjaJS website" />
 
 	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
