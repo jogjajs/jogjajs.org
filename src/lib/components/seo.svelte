@@ -25,7 +25,7 @@
 	<meta name="og:url" content={url} />
 	<meta name="og:type" content="website" />
 	<meta name="og:description" content={description} />
-	<!-- <meta name="og:image" content={description} /> -->
+	<meta name="og:image" content="/banner.png" />
 	<meta name="og:site_name" content="Official JogjaJS website" />
 
 	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
