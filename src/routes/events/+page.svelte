@@ -7,12 +7,12 @@
 </script>
 
 <div
-	class="bg-gradient-to-b from-red-500/20 to-red-500/30 dark:from-red-600/20 dark:to-red-600/30 w-full"
+	class="bg-linear-to-b from-red-500/20 to-red-500/30 dark:from-red-600/20 dark:to-red-600/30 w-full"
 >
 	<div class="header px-4 md:px-8 lg:px-0 py-20 md:py-28">
-		<section class="max-w-screen-lg mx-auto space-y-4">
+		<section class="max-w-(--breakpoint-lg) mx-auto space-y-4">
 			<h1
-				class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-red-600/60 to-red-600/100 dark:from-red-400/40 dark:to-red-400/80"
+				class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-b from-red-600/60 to-red-600/100 dark:from-red-400/40 dark:to-red-400/80"
 			>
 				Meetups & Kongkow
 			</h1>

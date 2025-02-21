@@ -16,11 +16,11 @@
 </script>
 
 <div
-	class="flex flex-col gap-4 rounded border transition duration-300 border-transparent hover:bg-gray-100 hover:dark:bg-gray-950 hover:dark:border-gray-800 hover:border-gray-200 hover:shadow"
+	class="flex flex-col gap-4 rounded-sm border transition duration-300 border-transparent hover:bg-gray-100 dark:hover:bg-gray-950 dark:hover:border-gray-800 hover:border-gray-200 hover:shadow-sm"
 >
 	<img
 		src={meetup.coverImageUrl}
-		alt="Ini contoh"
+		alt={meetup.title}
 		width="400"
 		height="400"
 		class="w-full h-[380px] md:h-[430px] lg:h-[410px] rounded-t"

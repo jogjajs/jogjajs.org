@@ -1,7 +1,9 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte'
+
 	interface Props {
 		showFade?: boolean
-		children?: import('svelte').Snippet
+		children?: Snippet
 	}
 
 	let { showFade = true, children }: Props = $props()

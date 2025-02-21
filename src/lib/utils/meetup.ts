@@ -22,7 +22,7 @@ export function getMeetups(limit = 1000) {
 		throw Error('Limit must be uinteger (default: 1000)')
 	}
 
-	if (limit === 0) {
+	if (limit === 0 || meetups?.length === 0) {
 		return []
 	}
 

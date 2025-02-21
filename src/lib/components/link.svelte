@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cn'
+	import type { Snippet } from 'svelte'
 
 	interface Props {
 		href: string
 		extClass?: string
-		children?: import('svelte').Snippet
+		children?: Snippet
 		[key: string]: unknown
 	}
 
