@@ -5,9 +5,12 @@
 	import RecentEvents from '$lib/components/recent-events.svelte'
 	import square from '$lib/assets/square-organ.svg'
 	import type { LayoutData } from './$types'
+	import Seo from '$lib/components/seo.svelte'
 
 	const { data }: { data: LayoutData } = $props()
 </script>
+
+<Seo title="Home | JogjaJS" description="JavaScript User Group based in Yogyakarta, Indonesia" />
 
 <Hero meetups={data.meetups} />
 <GroupPhotos />

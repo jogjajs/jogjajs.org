@@ -11,10 +11,6 @@
 	let { children }: Props = $props()
 </script>
 
-<svelte:head>
-	<title>JogjaJS</title>
-</svelte:head>
-
 <PageHeader />
 <main class="min-h-screen dark:bg-black dark:text-white flex flex-col pb-40">
 	{@render children?.()}
