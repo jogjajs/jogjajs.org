@@ -1,10 +1,16 @@
 <script lang="ts">
 	import Container from '$lib/components/container.svelte'
 	import EventCard from '$lib/components/event-card.svelte'
+	import Seo from '$lib/components/seo.svelte'
 	import type { LayoutData } from '../$types'
 
 	let { data }: { data: LayoutData } = $props()
 </script>
+
+<Seo
+	title="Events | JogjaJS"
+	description="Find the nearest tech and JavaScript-related event in Yogyakarta"
+/>
 
 <div
 	class="bg-linear-to-b from-red-500/20 to-red-500/30 dark:from-red-600/20 dark:to-red-600/30 w-full"

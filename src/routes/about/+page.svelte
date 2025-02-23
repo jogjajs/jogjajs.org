@@ -3,9 +3,15 @@
 	import groupPhoto from '$lib/assets/group-2.jpg'
 	import type { LayoutData } from '../$types'
 	import ContactIcon from './contact-icon.svelte'
+	import Seo from '$lib/components/seo.svelte'
 
 	const { data }: { data: LayoutData } = $props()
 </script>
+
+<Seo
+	title="About Us | JogjaJS"
+	description="Discover the history and the passionate people behind JogjaJS, a thriving JavaScript community in Yogyakarta."
+/>
 
 <Container>
 	<section class="mb-28 px-4 md:px-8 lg:px-0">
