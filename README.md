@@ -1,16 +1,12 @@
-# jogjajs.org
+# [jogjajs.org](https://jogjajs.org)
 
-JogjaJS homepage.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4fd7738-6e28-404c-97db-3dd6fd08fcdd/deploy-status)](https://app.netlify.com/sites/jogjajs/deploys)
 
-## Demo
+JogjaJS Offical Website. Made with SvelteKit, TypeScript, TailwindCSS.
 
-[https://jogjajs.org](https://jogjajs.org)
+![JogjaJS](docs/jogjajs-dark.webp)
 
-## Tech Stack
-
-- SvelteKit
-- TypeScript
-- Tailwind CSS
+![JogjaJS](docs/jogjajs-light.webp)
 
 ## Getting Started
 
