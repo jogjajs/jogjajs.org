@@ -23,6 +23,8 @@
 		alt={meetup.title}
 		width="400"
 		height="400"
+		loading="lazy"
+		decoding="async"
 		class="w-full h-[380px] md:h-[430px] lg:h-[410px] rounded-t"
 	/>
 

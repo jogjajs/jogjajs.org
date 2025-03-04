@@ -5,6 +5,37 @@
 	import type { LayoutData } from '../$types'
 
 	let { data }: { data: LayoutData } = $props()
+	
+	// Pagination
+	let currentPage = $state(1)
+	let eventsPerPage = 6
+	
+	// Computed values
+	let totalPages = $derived(Math.ceil(data.meetups.length / eventsPerPage))
+	let paginatedEvents = $derived(data.meetups.slice(
+		(currentPage - 1) * eventsPerPage, 
+		currentPage * eventsPerPage
+	))
+	
+	// Change page functions
+	function goToPage(page: number) {
+		if (page >= 1 && page <= totalPages) {
+			currentPage = page
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+		}
+	}
+	
+	function nextPage() {
+		if (currentPage < totalPages) {
+			goToPage(currentPage + 1)
+		}
+	}
+	
+	function prevPage() {
+		if (currentPage > 1) {
+			goToPage(currentPage - 1)
+		}
+	}
 </script>
 
 <Seo
@@ -36,10 +67,55 @@
 <Container>
 	<div class="flex flex-col mt-8 md:mt-16">
 		<section class="flex z-20 flex-wrap justify-center md:mt-0 gap-8 md:gap-28">
-			{#each data.meetups as meetup (meetup.title)}
+			{#each paginatedEvents as meetup (meetup.title)}
 				<EventCard {meetup} />
 			{/each}
 		</section>
+		
+		<!-- Pagination controls -->
+		{#if totalPages > 1}
+			<div class="flex justify-center items-center mt-12 mb-8 space-x-2">
+				<button 
+					on:click={prevPage} 
+					class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed"
+					disabled={currentPage === 1}
+					aria-label="Previous page"
+				>
+					&laquo;
+				</button>
+				
+				<div class="flex space-x-2 mx-2">
+					{#each Array(totalPages) as _, i}
+						{#if totalPages <= 7 || i + 1 === 1 || i + 1 === totalPages || (i + 1 >= currentPage - 1 && i + 1 <= currentPage + 1)}
+							<button 
+								on:click={() => goToPage(i + 1)} 
+								class="w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800
+									{currentPage === i + 1 ? 'bg-purple-100 border-purple-300 dark:bg-purple-900 dark:border-purple-700' : ''}"
+								aria-label="Go to page {i + 1}"
+								aria-current={currentPage === i + 1 ? 'page' : undefined}
+							>
+								{i + 1}
+							</button>
+						{:else if (i + 1 === 2 && currentPage > 3) || (i + 1 === totalPages - 1 && currentPage < totalPages - 2)}
+							<span class="flex items-center justify-center w-10 h-10">...</span>
+						{/if}
+					{/each}
+				</div>
+				
+				<button 
+					on:click={nextPage} 
+					class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed"
+					disabled={currentPage === totalPages}
+					aria-label="Next page"
+				>
+					&raquo;
+				</button>
+			</div>
+			
+			<div class="text-center text-gray-500 dark:text-gray-400 mb-8">
+				Showing {(currentPage - 1) * eventsPerPage + 1} to {Math.min(currentPage * eventsPerPage, data.meetups.length)} of {data.meetups.length} events
+			</div>
+		{/if}
 	</div>
 </Container>
 
