@@ -35,6 +35,7 @@
 			<p>{format(meetup.date, 'dddd, D MMMM YYYY')}</p>
 			<p>at {meetup.venue}</p>
 
+			{#if meetup.rsvpLink}
 			<div class="flex items-center gap-6 mt-4">
 				<Link
 					target="_blank"
@@ -44,6 +45,7 @@
 					>Get RSVP <AkarIconsLinkOut width="15" height="15" /></Link
 				>
 			</div>
+			{/if}
 		</div>
 	</div>
 </div>
