@@ -6,6 +6,7 @@
 	import square from '$lib/assets/square-organ.svg'
 	import type { LayoutData } from './$types'
 	import Seo from '$lib/components/seo.svelte'
+	import { EventsConfig } from '$lib/data/constants'
 
 	const { data }: { data: LayoutData } = $props()
 </script>
@@ -22,6 +23,6 @@
 		height="200"
 		class="absolute -left-[8.5rem] top-[5rem] md:top-[5rem] lg:top-[16rem] lg:-left-10 z-5 opacity-60"
 	/>
-	<RecentEvents meetups={data.meetups.slice(0, 4)} />
+	<RecentEvents meetups={data.meetups.slice(0, EventsConfig.HomePageEventsCount)} />
 </div>
 <Partners data={data.partners} />
