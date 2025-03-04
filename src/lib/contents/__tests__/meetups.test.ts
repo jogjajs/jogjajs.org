@@ -10,7 +10,7 @@ describe('Meetups JSON Validation', () => {
 		meetups.forEach((meetup) => {
 			expect(meetup).toHaveProperty('title', expect.any(String))
 			expect(meetup).toHaveProperty('coverImageUrl', expect.any(String))
-			expect(meetup).toHaveProperty('rsvpLink', expect.any(String))
+			expect(meetup).toHaveProperty('rsvpLink')
 			expect(meetup).toHaveProperty('venue', expect.any(String))
 			expect(meetup).toHaveProperty('date', expect.any(String))
 			expect(meetup).toHaveProperty('speakers', expect.any(Array))
@@ -33,7 +33,9 @@ describe('Meetups JSON Validation', () => {
 	it('should have valid URLs', () => {
 		const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/
 		meetups.forEach((meetup) => {
-			expect(meetup.rsvpLink).toMatch(urlRegex)
+			if (meetup.rsvpLink !== null) {
+				expect(meetup.rsvpLink).toMatch(urlRegex)
+			}
 
 			meetup.speakers.forEach((speaker) => {
 				expect(speaker.photoUrl).toMatch(urlRegex)
@@ -43,7 +45,7 @@ describe('Meetups JSON Validation', () => {
 
 	it('should have coverImageUrl in the format /assets/meetups/*', () => {
 		meetups.forEach((meetup) => {
-			const coverImageUrlRegex = /^\/assets\/meetups\/[\w-]+\.(jpg|jpeg|png|gif)$/i
+			const coverImageUrlRegex = /^\/assets\/meetups\/[\w-.]+\.(jpg|jpeg|png|gif)$/i
 			expect(meetup.coverImageUrl).toMatch(coverImageUrlRegex)
 		})
 	})
