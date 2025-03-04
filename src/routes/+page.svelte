@@ -22,6 +22,6 @@
 		height="200"
 		class="absolute -left-[8.5rem] top-[5rem] md:top-[5rem] lg:top-[16rem] lg:-left-10 z-5 opacity-60"
 	/>
-	<RecentEvents meetups={data.meetups} />
+	<RecentEvents meetups={data.meetups.slice(0, 4)} />
 </div>
 <Partners data={data.partners} />
