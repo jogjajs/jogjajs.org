@@ -36,15 +36,15 @@
 			<p>at {meetup.venue}</p>
 
 			{#if meetup.rsvpLink}
-			<div class="flex items-center gap-6 mt-4">
-				<Link
-					target="_blank"
-					rel="noopener noreferrer"
-					href={meetup.rsvpLink}
-					extClass="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500"
-					>Get RSVP <AkarIconsLinkOut width="15" height="15" /></Link
-				>
-			</div>
+				<div class="flex items-center gap-6 mt-4">
+					<Link
+						target="_blank"
+						rel="noopener noreferrer"
+						href={meetup.rsvpLink}
+						extClass="text-blue-600 inline-flex items-start gap-1 dark:text-blue-500"
+						>Get RSVP <AkarIconsLinkOut width="15" height="15" /></Link
+					>
+				</div>
 			{/if}
 		</div>
 	</div>
