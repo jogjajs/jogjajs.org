@@ -75,7 +75,7 @@
 		{#if totalPages > 1}
 			<div class="flex justify-center items-center mt-12 mb-8 space-x-2">
 				<button
-					on:click={prevPage}
+					onclick={prevPage}
 					class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer disabled:hover:bg-white disabled:hover:dark:bg-black"
 					disabled={currentPage === 1}
 					aria-label="Previous page"
@@ -87,7 +87,7 @@
 					{#each Array(totalPages) as _, i}
 						{#if totalPages <= 7 || i + 1 === 1 || i + 1 === totalPages || (i + 1 >= currentPage - 1 && i + 1 <= currentPage + 1)}
 							<button
-								on:click={() => goToPage(i + 1)}
+								onclick={() => goToPage(i + 1)}
 								class="w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer disabled:hover:bg-white disabled:hover:dark:bg-black
 									{currentPage === i + 1
 									? 'bg-purple-100 border-purple-300 dark:bg-purple-900 dark:border-purple-700'
@@ -104,7 +104,7 @@
 				</div>
 
 				<button
-					on:click={nextPage}
+					onclick={nextPage}
 					class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer disabled:hover:bg-white disabled:hover:dark:bg-black"
 					disabled={currentPage === totalPages}
 					aria-label="Next page"
