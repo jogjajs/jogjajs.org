@@ -13,7 +13,7 @@
 
 <div class="overflow-hidden grayscale hover:grayscale-0 transition duration-300">
 	<Marqueeck options={{ direction: 'left' }}>
-		<img src={group1} alt="Haha" width="300" height="300" />
-		<img src={group2} alt="Haha" width="300" height="300" />
+		<img src={group1} alt="" width="300" height="300" loading="lazy" decoding="async" />
+		<img src={group2} alt="" width="300" height="300" loading="lazy" decoding="async" />
 	</Marqueeck>
 </div>

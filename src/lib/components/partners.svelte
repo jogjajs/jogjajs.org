@@ -18,7 +18,14 @@
 		<ul class="flex flex-wrap justify-center gap-8 mt-8">
 			{#each data.media as media (media.name)}
 				<li class="flex flex-col items-center">
-					<img src={media.logoPath} width="150" height="150" alt="org example" />
+					<img
+						src={media.logoPath}
+						width="150"
+						height="150"
+						alt={`${media.name} logo`}
+						loading="lazy"
+						decoding="async"
+					/>
 					<p>{media.name}</p>
 				</li>
 			{/each}
@@ -31,7 +38,14 @@
 		<ul class="flex flex-wrap justify-center gap-8 mt-8">
 			{#each data.orgs as org (org.name)}
 				<li class="flex flex-col items-center">
-					<img src={org.logoPath} width="150" height="150" alt="org example" />
+					<img
+						src={org.logoPath}
+						width="150"
+						height="150"
+						alt={`${org.name} logo`}
+						loading="lazy"
+						decoding="async"
+					/>
 					<p>{org.name}</p>
 				</li>
 			{/each}

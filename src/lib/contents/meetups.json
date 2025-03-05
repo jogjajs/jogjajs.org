@@ -1,38 +1,440 @@
 [
 	{
-		"title": "Tech Conference 2025",
-		"coverImageUrl": "/assets/meetups/event-sample.jpg",
-		"rsvpLink": "https://example.com/rsvp",
-		"venue": "Convention Center",
-		"date": "2025-01-10",
+		"title": "JogjaJS #33",
+		"coverImageUrl": "/assets/meetups/jogjajs-33.jpeg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2025-02-26",
 		"speakers": [
 			{
-				"name": "John Doe",
-				"description": "Software Engineer",
+				"name": "Zain Fathoni",
+				"description": "Senior Front-end Engineer, Relay Commerce",
 				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
 			},
 			{
-				"name": "Jane Smith",
-				"description": "Data Scientist",
+				"name": "Tri Hargianto",
+				"description": "Principal Front-end Engineer, Mamikos.com",
 				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
 			}
 		]
 	},
 	{
-		"title": "Tech Conference 2024",
-		"coverImageUrl": "/assets/meetups/event-sample.jpg",
-		"rsvpLink": "https://example.com/rsvp",
-		"venue": "Convention Center",
-		"date": "2024-01-10",
+		"title": "JogjaJS #32",
+		"coverImageUrl": "/assets/meetups/jogjajs-32.jpeg",
+		"rsvpLink": null,
+		"venue": "Berijalan Techno Center",
+		"date": "2024-06-22",
 		"speakers": [
 			{
-				"name": "John Doe",
-				"description": "Software Engineer",
+				"name": "AHmad Basir",
+				"description": "Back-end Developer, Berijalan",
 				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
 			},
 			{
-				"name": "Jane Smith",
-				"description": "Data Scientist",
+				"name": "Eka Jayani Ayuningtyas",
+				"description": "Web Developer, Atma Connect",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #31",
+		"coverImageUrl": "/assets/meetups/jogjajs-31.jpg",
+		"rsvpLink": null,
+		"venue": "Mamikos Office",
+		"date": "2023-10-28",
+		"speakers": [
+			{
+				"name": "Hanif Miftahudin",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Fajar Norman",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Ahmad Alfan",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Giga Prakosa Hikmata",
+				"description": "Eningeering Manager",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Hanief Utama",
+				"description": "Tech Lead, Front-end",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Angga Indriya P",
+				"description": "Senior Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Tri Hargianto",
+				"description": "Tech Lead, Front-end",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Edward Chakim",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Roy Margasa",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Krisna Sandi",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Wahyudi",
+				"description": "Front-end Engineer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #29",
+		"coverImageUrl": "/assets/meetups/jogjajs-29.jpg",
+		"rsvpLink": null,
+		"venue": "Skyshi Digital Indonesia, PT.",
+		"date": "2023-08-26",
+		"speakers": [
+			{
+				"name": "Puji Andrianto",
+				"description": "Mobile Engineer, Skyshi",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Annas Adharuqudni",
+				"description": "Software Engineer, Tiket.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #28",
+		"coverImageUrl": "/assets/meetups/jogjajs-28.jpeg",
+		"rsvpLink": null,
+		"venue": "GMedia PT Media Sarana Data",
+		"date": "2020-04-26",
+		"speakers": [
+			{
+				"name": "Abdul R. Wahid",
+				"description": "Software Engineer, Tokopedia",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Muhammad Syaifudin",
+				"description": "Tech Lead, Dimensi Cloud",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #27",
+		"coverImageUrl": "/assets/meetups/jogjajs-27.jpg",
+		"rsvpLink": null,
+		"venue": "Domainesia Deneva Hub",
+		"date": "2023-06-17",
+		"speakers": [
+			{
+				"name": "Kalwabed Rizki",
+				"description": "Software Engineer, VNT",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Manda Putra",
+				"description": "Product Engineer, Zero One Group",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #26.2",
+		"coverImageUrl": "/assets/meetups/jogjajs-26.2.jpg",
+		"rsvpLink": null,
+		"venue": "Smedi Coliving & Coffee",
+		"date": "2023-02-25",
+		"speakers": [
+			{
+				"name": "Devi Krisdiansyah",
+				"description": "Lead Designer, TLab",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Giga Prakosa Hikmata",
+				"description": "Engineering Manager, Mamikos.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Niken Wulandari",
+				"description": "Front-end Engineer, Halodoc",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #26.1",
+		"coverImageUrl": "/assets/meetups/jogjajs-26.1.jpg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2021-08-28",
+		"speakers": [
+			{
+				"name": "Tri Hargianto",
+				"description": "Front-end Engineer, Mamikos.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Asdita Prasetya",
+				"description": "Back-end Engineer, TLab",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #25",
+		"coverImageUrl": "/assets/meetups/jogjajs-25.jpg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2020-07-18",
+		"speakers": [
+			{
+				"name": "Jazilul Athoya",
+				"description": "Apple Developer Academy, Binus",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Zulwiyoza Putra",
+				"description": "Software Engineer, Traveloka",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #24",
+		"coverImageUrl": "/assets/meetups/jogjajs-24.jpg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2020-06-20",
+		"speakers": [
+			{
+				"name": "Sonny Lazuardi Hermawan",
+				"description": "Lead UX Engineer, Grab",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #23 - JogjaJS x Maukerja.id",
+		"coverImageUrl": "/assets/meetups/jogjajs-23.jpg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2020-05-17",
+		"speakers": [
+			{
+				"name": "Giga Prakosa Hikmata",
+				"description": "Engineering Manager, Mamikos.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Nanda Rizky",
+				"description": "Product Owner, Maukerja.id",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #22",
+		"coverImageUrl": "/assets/meetups/jogjajs-22.jpg",
+		"rsvpLink": null,
+		"venue": "Online Event",
+		"date": "2020-04-26",
+		"speakers": [
+			{
+				"name": "Yanuar Waskito",
+				"description": "Front-end Engineer, Team Cookies",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Tri Hargianto",
+				"description": "Front-end Engineer, Ralali",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Mulia Nasution",
+				"description": "Software Engineer, Refactory",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Niken Wulandari",
+				"description": "Front-end Engineer, PT GIT",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #21",
+		"coverImageUrl": "/assets/meetups/jogjajs-21.jpg",
+		"rsvpLink": null,
+		"venue": "Privy Quarter",
+		"date": "2020-02-28",
+		"speakers": [
+			{
+				"name": "R Adysurya A",
+				"description": "Software Engineer, Warung Pintar",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Devi Krisdiansyah",
+				"description": "Lead Designer, TLab",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Chandra Noor Rachman",
+				"description": "UI/UX Designer, Privy",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Muhammaad Rif'an Ade Novid",
+				"description": "Frontend Engineer, Privy",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #20",
+		"coverImageUrl": "/assets/meetups/jogjajs-20.jpg",
+		"rsvpLink": null,
+		"venue": "BLOCK71 Yogyakarta",
+		"date": "2020-01-24",
+		"speakers": [
+			{
+				"name": "Diky Arga",
+				"description": "Senior Frontend Developer, Bukalapak",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Evan Purnama",
+				"description": "Co-Founder & CTO at Qiscus Pte Ltd",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #16",
+		"coverImageUrl": "/assets/meetups/jogjajs-16.jpg",
+		"rsvpLink": null,
+		"venue": "Demoroom Gamatechno",
+		"date": "2018-10-20",
+		"speakers": [
+			{
+				"name": "Abdul R. Wahid",
+				"description": "Full-Stack Developer, Gamatechno",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Muhammad Rizki Rijal",
+				"description": "Innitator HAMMERCODE",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #14",
+		"coverImageUrl": "/assets/meetups/jogjajs-14.jpg",
+		"rsvpLink": null,
+		"venue": "Ruang Inspirasi, IA Hub",
+		"date": "2018-09-25",
+		"speakers": [
+			{
+				"name": "Yohan Totting",
+				"description": "Web Developer Relations at Google",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Rizqy Hidayat",
+				"description": "CTO at GIFOOD",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #13 - JogjaJS x Wonderlabs",
+		"coverImageUrl": "/assets/meetups/jogjajs-13.jpg",
+		"rsvpLink": null,
+		"venue": "Wonderlabs Office",
+		"date": "2018-08-11",
+		"speakers": [
+			{
+				"name": "Giga Prakosa Hikmata",
+				"description": "Front-end Engineer, Mamikos.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Adiatma",
+				"description": "Front-end Engineer at Ruangguru.com",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #11 - JogjaJS x Kitabisa",
+		"coverImageUrl": "/assets/meetups/jogjajs-11.jpg",
+		"rsvpLink": null,
+		"venue": "Kitabisa Office",
+		"date": "2018-04-21",
+		"speakers": [
+			{
+				"name": "Muhammad Ridho",
+				"description": "Front-end Engineer, Kitabisa",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Tri Hargianto",
+				"description": "Front-end Engineer, Freelancer",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #10 - JogjaJS x Dilo",
+		"coverImageUrl": "/assets/meetups/jogjajs-10.jpg",
+		"rsvpLink": null,
+		"venue": "Jogja Digital Valley",
+		"date": "2018-03-12",
+		"speakers": [
+			{
+				"name": "Yohan Totting",
+				"description": "Developer Advocate, Google Web Developer Relations Team",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			},
+			{
+				"name": "Tety Sianipar",
+				"description": "Co-founder & CTO Kerjabilitas",
+				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
+			}
+		]
+	},
+	{
+		"title": "JogjaJS #9 - JogjaJS x Esoftdream",
+		"coverImageUrl": "/assets/meetups/jogjajs-9.jpeg",
+		"rsvpLink": null,
+		"venue": "Esoftdream Office",
+		"date": "2018-02-25",
+		"speakers": [
+			{
+				"name": "Afrian Junior",
+				"description": "Frontend Developer",
 				"photoUrl": "https://avatars.githubusercontent.com/u/97165289"
 			}
 		]
