@@ -88,10 +88,8 @@
 						{#if totalPages <= 7 || i + 1 === 1 || i + 1 === totalPages || (i + 1 >= currentPage - 1 && i + 1 <= currentPage + 1)}
 							<button
 								onclick={() => goToPage(i + 1)}
-								class="w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer disabled:hover:bg-white disabled:hover:dark:bg-black
-									{currentPage === i + 1
-									? 'bg-purple-100 border-purple-300 dark:bg-purple-900 dark:border-purple-700'
-									: ''}"
+								class="w-10 h-10 rounded-md border border-gray-300 dark:border-gray-700 text-black hover:bg-red-500 hover:text-white dark:hover:bg-red-700 dark:text-white cursor-pointer disabled:hover:bg-white disabled:hover:dark:bg-black
+									{currentPage === i + 1 ? 'bg-red-500 dark:bg-red-700 text-white' : ''}"
 								aria-label="Go to page {i + 1}"
 								aria-current={currentPage === i + 1 ? 'page' : undefined}
 							>
